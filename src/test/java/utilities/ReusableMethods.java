@@ -17,7 +17,22 @@ import java.util.Date;
 import java.util.List;
 
 
+
+
 public class ReusableMethods {
+
+    public static void traddylinnCreateAccount(){
+        Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
+        Driver.getDriver().findElement(By.xpath("//span[normalize-space()='Üye Ol']")).click();
+        Driver.getDriver().findElement(By.xpath("//*[@class='wcfmmp_become_vendor_link']//a")).click();
+        Driver.getDriver().findElement(By.xpath("//input[@id='user_email']")).sendKeys(ConfigReader.getProperty("tradEmail"));
+        Driver.getDriver().findElement(By.xpath("//input[@id='passoword']")).sendKeys(ConfigReader.getProperty("tradPass"));
+        Driver.getDriver().findElement(By.xpath("//input[@id='confirm_pwd']")).sendKeys(ConfigReader.getProperty("tradPass"));
+        Driver.getDriver().findElement(By.xpath("//input[@id='wcfm_membership_register_button']")).click();
+
+    }
+ 
+
     public static String getScreenshot(String name) throws IOException {
         // naming the screenshot with the current date to avoid duplication
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
