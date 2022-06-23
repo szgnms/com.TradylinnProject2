@@ -17,7 +17,80 @@ import java.util.Date;
 import java.util.List;
 
 
+
+
 public class ReusableMethods {
+    public static void traddylinnCreateAccount(){
+        Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
+        Driver.getDriver().findElement(By.xpath("//span[normalize-space()='Üye Ol']")).click();
+        Driver.getDriver().findElement(By.xpath("//*[@class='wcfmmp_become_vendor_link']//a")).click();
+        Driver.getDriver().findElement(By.xpath("//input[@id='user_email']")).sendKeys(ConfigReader.getProperty("tradEmail"));
+        Driver.getDriver().findElement(By.xpath("//input[@id='passoword']")).sendKeys(ConfigReader.getProperty("tradPass"));
+        Driver.getDriver().findElement(By.xpath("//input[@id='confirm_pwd']")).sendKeys(ConfigReader.getProperty("tradPass"));
+        bekle();
+        Driver.getDriver().findElement(By.xpath("//input[@id='wcfm_membership_register_button']")).click();
+    }
+    public static void bekle(){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
+
+
+    public static void tradylinnGiris(){
+        Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
+        bekle();
+        Driver.getDriver().findElement(By.xpath("//span[contains(text(),'Giriş Yap')]")).click();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//*[@type='text'])[1]")).sendKeys(ConfigReader.getProperty("tradEmail"));
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//*[@name='password'])[1]")).sendKeys(ConfigReader.getProperty("tradPass"));
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//*[@type='submit'])[1]")).click();
+    }
+
+
+    public static void tradylinnStoreManager(){
+        Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
+        bekle();
+        Driver.getDriver().findElement(By.xpath("//span[contains(text(),'Giriş Yap')]")).click();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//*[@type='text'])[1]")).sendKeys(ConfigReader.getProperty("tradEmail"));
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//*[@name='password'])[1]")).sendKeys(ConfigReader.getProperty("tradPass"));
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//*[@type='submit'])[1]")).click();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("//*[@id='menu-item-1074']")).click();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//*[@class='woocommerce-MyAccount-navigation col-md-3 mb-8']//li)[2]")).click();
+
+    }
+
+    public static void tradylinnHesabim() {
+        Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
+        bekle();
+        Driver.getDriver().findElement(By.xpath("//span[contains(text(),'Giriş Yap')]")).click();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//*[@type='text'])[1]")).sendKeys(ConfigReader.getProperty("tradEmail"));
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//*[@name='password'])[1]")).sendKeys(ConfigReader.getProperty("tradPass"));
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//*[@type='submit'])[1]")).click();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("//*[@id='menu-item-1074']")).click();
+    }
+
     public static String getScreenshot(String name) throws IOException {
         // naming the screenshot with the current date to avoid duplication
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
