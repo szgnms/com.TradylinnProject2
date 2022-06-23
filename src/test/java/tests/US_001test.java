@@ -8,12 +8,13 @@ import utilities.ReusableMethods;
 public class US_001test {
     US_001page us1 = new US_001page();
 
+    @Test
     public void yazdir() {
 
-        for (WebElement w : us1.category
-        ) {
-            w.click();
-        }
+       // ReusableMethods.tradylinnGiris();
+        //ReusableMethods.tradylinnHesabim();
+         //ReusableMethods.tradylinnStoreManager();
+
 
     }
 
