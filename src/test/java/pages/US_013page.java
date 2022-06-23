@@ -11,6 +11,9 @@ public class US_013page {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//a[@href='https://tradylinn.com/store-manager/coupons/']")
+    @FindBy (xpath = "//a[@href='https://tradylinn.com/store-manager/coupons/']")
     public WebElement kuponlarButonu;
+
+    @FindBy (xpath = "//")
+    public WebElement deneme;
 }
