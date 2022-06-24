@@ -1,9 +1,7 @@
 package tests;
 
-import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import pages.US_001page;
-import utilities.ReusableMethods;
+import pages.MuhammedSezgin.US_001page;
 
 public class US_001test {
     US_001page us1 = new US_001page();
