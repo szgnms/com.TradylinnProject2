@@ -1,4 +1,4 @@
-package tests;
+package tests.MuhammedSezgin;
 
 import org.testng.annotations.Test;
 import pages.MuhammedSezgin.US_001page;
