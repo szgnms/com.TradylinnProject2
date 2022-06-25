@@ -17,3 +17,5 @@ public class US_013page {
     @FindBy (xpath = "//")
     public WebElement deneme;
 }
+
+
