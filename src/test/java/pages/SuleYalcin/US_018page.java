@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class US_018page {
     public US_018page() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -44,5 +46,8 @@ public class US_018page {
 
     @FindBy(xpath = "//tbody//tr[1]//td[6]")
     public static WebElement reasonText;
+
+    @FindBy(xpath = "(//*[@cellpadding='0']//tr)[1]//th")
+    public static List<WebElement> refundRequestTable;
 
 }
