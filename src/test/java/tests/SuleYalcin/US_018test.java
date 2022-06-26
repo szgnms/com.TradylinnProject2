@@ -54,18 +54,12 @@ public class US_018test extends TestBaseRapor{
 
 
         SoftAssert sf=new SoftAssert();
-        sf.assertTrue(US_018page.refundRequestTable.get(0).isDisplayed());
-        sf.assertTrue(US_018page.refundRequestTable.get(1).isDisplayed());
-        sf.assertTrue(US_018page.refundRequestTable.get(2).isDisplayed());
-        sf.assertTrue(US_018page.refundRequestTable.get(3).isDisplayed());
-        sf.assertAll();
-
 
         sf.assertTrue(US_018page.orderId.isDisplayed());
         sf.assertTrue(US_018page.amount.isDisplayed());
         sf.assertTrue(US_018page.type.isDisplayed());
         sf.assertTrue(US_018page.reasonText.isDisplayed());
-
+        sf.assertAll();
 
 
     }

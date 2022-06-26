@@ -1,14 +1,18 @@
 package tests.SuleYalcin;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.SuleYalcin.US_019page;
+import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
+import static pages.SuleYalcin.US_018page.requestId;
 import static pages.SuleYalcin.US_019page.*;
 import static utilities.ReusableMethods.bekle;
 
-public class US_019test {
+public class US_019test extends TestBaseRapor {
    public  US_019test(){
 
    }
@@ -21,6 +25,9 @@ public class US_019test {
         ReusableMethods.tradylinnStoreManager();
         bekle();
 
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("arguments[0].scrollIntoView(true);",takipcilerButonu);
+        bekle();
         takipcilerButonu.click();
         bekle();
 
