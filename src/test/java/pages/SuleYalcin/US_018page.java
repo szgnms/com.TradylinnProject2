@@ -19,7 +19,7 @@ public class US_018page {
     public static WebElement qty;
 
     @FindBy(xpath = "//textarea[@id='wcfm_refund_reason']")
-    public static WebElement refundReqestReason;
+    public static WebElement refundRequestReason;
 
 
     @FindBy(xpath = "//input[@id='wcfm_refund_requests_submit_button']")

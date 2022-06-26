@@ -15,7 +15,7 @@ public class Driver {
 
 
     static WebDriver driver;
-    static ChromeOptions options;
+
 
 
     public static WebDriver getDriver() {
