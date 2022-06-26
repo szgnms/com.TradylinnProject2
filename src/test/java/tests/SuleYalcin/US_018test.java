@@ -60,7 +60,7 @@ public class US_018test extends TestBaseRapor{
         sf.assertTrue(US_018page.type.isDisplayed());
         sf.assertTrue(US_018page.reasonText.isDisplayed());
         sf.assertAll();
-
+            //oylesine
 
     }
 }
