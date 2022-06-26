@@ -1,4 +1,4 @@
 package tests.EmreKarasu;
 
-public class a {
+public class US_009Test {
 }
