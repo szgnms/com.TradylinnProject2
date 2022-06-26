@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import java.io.File;
 import java.io.IOException;
@@ -30,6 +31,33 @@ public class ReusableMethods {
         bekle();
         Driver.getDriver().findElement(By.xpath("//input[@id='wcfm_membership_register_button']")).click();
     }
+
+    public static void tradylinnGmailAccountSubmit(){
+        Driver.getDriver().get(ConfigReader.getProperty("mailUrl"));
+        Driver.getDriver().findElement(By.xpath("//a[contains(text(),'Oturum açın')]")).click();
+        Driver.getDriver().findElement(By.xpath("//input[@id='identifierId']")).sendKeys(ConfigReader.getProperty("tradEmail"));
+        Driver.getDriver().findElement(By.xpath("//span[contains(text(),'İleri')]")).click();
+        Driver.getDriver().findElement(By.xpath("//input[@name='password']")).sendKeys(ConfigReader.getProperty("tradPass"));
+        Driver.getDriver().findElement(By.xpath("//span[contains(text(),'İleri')]")).click();
+        ArrayList<WebElement> mailList =new ArrayList<>(Driver.getDriver().findElements(By.xpath("//div[@class='yW']")));
+        for (WebElement w:mailList
+             ) {
+            if (w.getText().contains("Tradylinn")){
+                w.click();
+            }
+        }
+        Driver.getDriver().findElement(By.xpath("//a[normalize-space()='click here']")).click();
+        ArrayList<String> handles =new ArrayList<>(Driver.getDriver().getWindowHandles());
+        Driver.getDriver().switchTo().window(handles.get(1));
+        Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//h2[@class='page-title']")).isDisplayed());
+
+    }
+
+    public static void anasayfaDogrula(){
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(" https://tradylinn.com"));
+    }
+
+
     public static void bekle(){
         try {
             Thread.sleep(3000);
@@ -74,6 +102,8 @@ public class ReusableMethods {
         Driver.getDriver().findElement(By.xpath("(//*[@class='woocommerce-MyAccount-navigation col-md-3 mb-8']//li)[2]")).click();
 
     }
+
+
 
     public static void tradylinnHesabim() {
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
