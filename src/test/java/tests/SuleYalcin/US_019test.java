@@ -11,6 +11,7 @@ import utilities.TestBaseRapor;
 import static pages.SuleYalcin.US_018page.requestId;
 import static pages.SuleYalcin.US_019page.*;
 import static utilities.ReusableMethods.bekle;
+import static utilities.ReusableMethods.hover;
 
 public class US_019test extends TestBaseRapor {
    public  US_019test(){
@@ -18,16 +19,17 @@ public class US_019test extends TestBaseRapor {
    }
 
     @Test
-    public void takipciler() {
+    public void takipciler() throws InterruptedException {
 
        // ReusableMethods.tradylinnGiris();
         //ReusableMethods.tradylinnHesabim();
         ReusableMethods.tradylinnStoreManager();
-        bekle();
-
+     /*
         JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
         jse.executeScript("arguments[0].scrollIntoView(true);",takipcilerButonu);
-        bekle();
+        bekle();*/
+        Thread.sleep(15000);
+        hover(takipcilerButonu);
         takipcilerButonu.click();
         bekle();
 
