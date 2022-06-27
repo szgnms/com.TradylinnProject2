@@ -11,8 +11,13 @@ public class US_018page {
     public US_018page() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(xpath = "(//span[text()='Emirler'])[1]")
+
+    @FindBy(xpath = "//span[@class='text'][normalize-space()='Emirler']")
     public static WebElement emirlerLinki;
+
+
+  /*  @FindBy(xpath = "(//span[text()='Emirler'])[1]")
+    public static WebElement emirlerLinki;*/
 
     @FindBy(xpath = "(//span[@data-tip='Refund Request'])[1]")
     public static WebElement refundRequest;
