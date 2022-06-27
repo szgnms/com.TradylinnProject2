@@ -9,6 +9,8 @@ public class US_21page {
     public US_21page() {PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath = "//div[@class='wcfm_menu_items wcfm_menu_wcfm-reports']")
-    public static WebElement raporlar;
+    public WebElement raporlar;
+    @FindBy(xpath = "//*[@id=\"poststuff\"]/div/div[1]/ul/li[1]/a")
+    public WebElement yillikRapor;
 
 }
