@@ -1,4 +1,4 @@
 package tests.SuleYalcin;
 
-public class a {
+public class US_020test {
 }
