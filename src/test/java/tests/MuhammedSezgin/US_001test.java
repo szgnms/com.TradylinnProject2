@@ -2,6 +2,7 @@ package tests.MuhammedSezgin;
 
 import org.testng.annotations.Test;
 import pages.MuhammedSezgin.US_001page;
+import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
 public class US_001test extends TestBaseRapor {
@@ -10,7 +11,7 @@ public class US_001test extends TestBaseRapor {
     @Test
     public void yazdir() {
 
-       // ReusableMethods.tradylinnGiris();
+    ReusableMethods.tradylinnGiris();
         //ReusableMethods.tradylinnHesabim();
          //ReusableMethods.tradylinnStoreManager();
 
