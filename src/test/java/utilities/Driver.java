@@ -24,11 +24,7 @@ public class Driver {
             switch (ConfigReader.getProperty("browser")) {
                 case "chrome" -> {
                     WebDriverManager.chromedriver().setup();
-                    options = new ChromeOptions();
-                    options.addExtensions(new File("C:\\Users\\ms\\Downloads\\XPath.crx"));
-                    DesiredCapabilities capabilities = new DesiredCapabilities();
-                    capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-                    driver = new ChromeDriver(capabilities);
+                    driver = new ChromeDriver();
                 }
                 case "safari" -> {
                     WebDriverManager.safaridriver().setup();

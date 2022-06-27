@@ -16,6 +16,28 @@ public class US_013page {
 
     @FindBy (xpath = "//")
     public WebElement deneme;
+
+    @FindBy (xpath = "//*[text()='Giriş Yap']")
+    public WebElement anaSayfaGirisYapButonu;
+
+    @FindBy (xpath = "//input[@type='text']")
+    public WebElement kullaniciAdiEmailInput;
+
+    @FindBy (xpath = "(//input[@type='password'])[1]")
+    public WebElement parolaInput;
+
+    @FindBy (xpath = "(//button[@type='submit'])[1]")
+    public WebElement girisYapSubmitButonu;
+
+    @FindBy (xpath = "(//*[text()='Hesabım'])[1]")
+    public WebElement hesabimButonu;
+
+    @FindBy (xpath = "//*[text()='Store Manager']")
+    public WebElement storeManagerButonu;
+
+    @FindBy (xpath = "//a[@href='https://tradylinn.com/store-manager/coupons-manage/']")
+    public WebElement yeniEkleButonu;
+
 }
 
 
