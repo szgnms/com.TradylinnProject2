@@ -8,7 +8,7 @@ import utilities.Driver;
 public class US_21page {
     public US_21page() {PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "(//span[@class='text'])[14]")
+    @FindBy(xpath = "//div[@class='wcfm_menu_items wcfm_menu_wcfm-reports']")
     public static WebElement raporlar;
 
 }
