@@ -90,6 +90,7 @@ public class ReusableMethods {
         Driver.getDriver().findElement(By.xpath("(//*[@name='password'])[1]")).sendKeys(ConfigReader.getProperty("tradPass"));
         Driver.getDriver().findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
         Driver.getDriver().findElement(By.xpath("(//*[@type='submit'])[1]")).click();
+        bekle();
         Driver.getDriver().findElement(By.xpath("//*[@id='menu-item-1074']")).click();
         bekle();
         Driver.getDriver().findElement(By.xpath("(//*[@class='woocommerce-MyAccount-navigation col-md-3 mb-8']//li)[2]")).click();
