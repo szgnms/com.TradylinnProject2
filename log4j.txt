@@ -1,3 +1,36 @@
-2022-06-24 17:29:33 INFO  Utils:112 - [TestNG] Running:
-  C:\Users\ms\Documents\GitHub\com.TradylinnProject\src\runner.xml
+2022-06-27 15:11:08 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ms\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
 
+2022-06-27 15:11:10 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-06-27 15:11:10 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-06-27 15:12:53 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ms\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+2022-06-27 15:12:54 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-06-27 15:12:54 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-06-27 15:17:14 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ms\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+2022-06-27 15:17:15 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-06-27 15:17:15 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-06-27 15:19:57 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ms\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
+
+2022-06-27 15:19:58 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-06-27 15:19:59 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-06-27 15:20:57 WARN  WebSocketHandler:142 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
