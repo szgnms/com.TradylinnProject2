@@ -7,6 +7,8 @@ import pages.ErenUstaoglu.US_013page;
 import utilities.ConfigReader;
 import utilities.Driver;
 
+import static utilities.ReusableMethods.bekle;
+
 public class US_013test {
 
 
@@ -18,28 +20,28 @@ public class US_013test {
     public void TC_001() throws InterruptedException {
         //Vendor "https://tradylinn.com/" adresine gider
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
-        Thread.sleep(15000);
+        bekle();
         //Vendor "Giriş yap" butonuna tiklar
         us_013page.anaSayfaGirisYapButonu.click();
-        Thread.sleep(15000);
+        bekle();
         //Vendor "vendor adı veya e-posta adresi" inputuna gecerli Email girer
         us_013page.kullaniciAdiEmailInput.sendKeys(ConfigReader.getProperty("tradEmail"));
         //Vendor "Parola" inputuna gecerli parolayi girer
         us_013page.parolaInput.sendKeys(ConfigReader.getProperty("tradPass"));
         //Vendor "GİRİŞ YAP" butonuna tiklar
         us_013page.girisYapSubmitButonu.click();
-        Thread.sleep(15000);
+        bekle();
         //Vendor "Hesabım" butonuna tiklar
         us_013page.hesabimButonu.click();
-        Thread.sleep(15000);
+        bekle();
         us_013page.storeManagerButonu.click();
-        Thread.sleep(15000);
+        bekle();
         //Vendor "Kuponlar" butonundan "Yeni ekle" secenegini tiklar
         actions
                 .moveToElement(us_013page.kuponlarButonu)
                 .click(us_013page.yeniEkleButonu)
                 .perform();
-        Thread.sleep(15000);
+        bekle();
         //Vendor "Code" satirina unique bir deger girer
 
         //Vendor "SUBMİT" butonuna tiklar
