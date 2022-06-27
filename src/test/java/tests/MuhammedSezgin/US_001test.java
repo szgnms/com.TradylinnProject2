@@ -21,6 +21,7 @@ public class US_001test extends TestBaseRapor {
         us1.uyeOlButton.click();
         us1.vendorButton.click();
         sf.assertTrue(us1.vendorRegisterPage.isDisplayed());
+        sf.assertAll();
     }
 
     @Test
@@ -32,6 +33,7 @@ public class US_001test extends TestBaseRapor {
         sf.assertTrue(us1.passwordBlock.isEnabled());
         sf.assertTrue(us1.confPasswordBlock.isDisplayed());
         sf.assertTrue(us1.confPasswordBlock.isEnabled());
+        sf.assertAll();
     }
 
     @Test
@@ -42,6 +44,7 @@ public class US_001test extends TestBaseRapor {
         us1.confPasswordBlock.sendKeys(ConfigReader.getProperty("tradPass"));
         us1.registerButton.click();
         sf.assertTrue(us1.registerEmailErrorBosMail.isDisplayed());
+        sf.assertAll();
 
     }
 
@@ -53,6 +56,7 @@ public class US_001test extends TestBaseRapor {
         us1.confPasswordBlock.sendKeys(ConfigReader.getProperty("tradPass"));
         us1.registerButton.click();
         sf.assertTrue(us1.registerEmailErrorYanlisMail.isDisplayed());
+        sf.assertAll();
     }
 
     @Test
@@ -63,6 +67,7 @@ public class US_001test extends TestBaseRapor {
         us1.confPasswordBlock.sendKeys(ConfigReader.getProperty("tradPass"));
         us1.registerButton.click();
         sf.assertTrue(us1.registerEmailErrorExistsMail.isDisplayed());
+        sf.assertAll();
     }
 
     @Test
@@ -73,6 +78,7 @@ public class US_001test extends TestBaseRapor {
         us1.confPasswordBlock.sendKeys(ConfigReader.getProperty("123456"));
         us1.registerButton.click();
         sf.assertTrue(us1.registerPasswordErrorAtleastGood.isDisplayed());
+        sf.assertAll();
     }
     @Test
     public void strongPassControl1() {
@@ -82,6 +88,7 @@ public class US_001test extends TestBaseRapor {
         us1.confPasswordBlock.sendKeys(ConfigReader.getProperty("123456**"));
         us1.registerButton.click();
         sf.assertTrue(us1.registerPasswordErrorAtleastGood.isDisplayed());
+        sf.assertAll();
     }
 
     @Test
@@ -92,6 +99,7 @@ public class US_001test extends TestBaseRapor {
         us1.confPasswordBlock.sendKeys(ConfigReader.getProperty("123456**aa"));
         us1.registerButton.click();
         sf.assertTrue(us1.registerPasswordErrorAtleastGood.isDisplayed());
+        sf.assertAll();
     }
     @Test
     public void strongPassControl3() {
@@ -101,6 +109,7 @@ public class US_001test extends TestBaseRapor {
         us1.confPasswordBlock.sendKeys(ConfigReader.getProperty("123456**aa"));
         sf.assertTrue(us1.registerPasswordVerifyGood.isDisplayed());
         us1.registerButton.click();
+        sf.assertAll();
     }
     @Test
     public void  PassControl() {
@@ -110,12 +119,14 @@ public class US_001test extends TestBaseRapor {
         us1.confPasswordBlock.sendKeys(ConfigReader.getProperty("123123123"));
         us1.registerButton.click();
         sf.assertTrue(us1.registerPasswordErrorNotSame.isDisplayed());
+        sf.assertAll();
     }
 
     @Test
     public void  verifyMail() {
-      //ReusableMethods.traddylinnCreateAccount();
-        ReusableMethods.tradylinnStoreManager();
+        ReusableMethods.traddylinnCreateAccount();
+        sf.assertTrue(us1.registerSuccess.isDisplayed());
+        ReusableMethods.tradylinnGmailAccountSubmit();
     }
 
 

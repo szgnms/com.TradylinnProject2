@@ -28,8 +28,8 @@ public class US_019test extends TestBaseRapor {
         JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
         jse.executeScript("arguments[0].scrollIntoView(true);",takipcilerButonu);
         bekle();*/
-        Thread.sleep(15000);
-        hover(takipcilerButonu);
+       // Thread.sleep(15000);
+        //hover(takipcilerButonu);
         takipcilerButonu.click();
         bekle();
 
