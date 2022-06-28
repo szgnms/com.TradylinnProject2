@@ -11,5 +11,7 @@ public class US_22page {
         PageFactory.initElements(Driver.getDriver(),this);
     }
     @FindBy(xpath = "//*[@id=\"main\"]/div/div/div[1]/div/div/div/section/div/div[2]/div/div/div/h2/a")
-    public WebElement hepsiniGör;
+    public WebElement tümünügör;
+    @FindBy(xpath = "//select[@class='orderby form-control']")
+    public WebElement varsayılanSıralama;
     }
