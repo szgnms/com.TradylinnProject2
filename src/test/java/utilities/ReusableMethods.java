@@ -243,8 +243,13 @@ public class ReusableMethods {
                 .pollingEvery(Duration.ofSeconds(1));//Check for the element every 1 second
         return wait.until(driver -> webElement);
     }
+    //seckin
     public static void sayfaAltı(){
         Actions actions=new Actions(Driver.getDriver());
         actions.sendKeys(Keys.PAGE_DOWN).perform();
+    }
+    public static void birAsagi() {
+        Actions actions = new Actions(Driver.getDriver());
+        actions.sendKeys(Keys.DOWN).perform();
     }
 }
