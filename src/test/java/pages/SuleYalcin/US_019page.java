@@ -7,12 +7,11 @@ import utilities.Driver;
 
 public class US_019page {
 
-  /*  @FindBy(xpath = "//span[@class='text'][normalize-space()='Takipçiler']")
-    public static WebElement takipcilerButonu;*/
+  // @FindBy(xpath = "//span[@class='text'][normalize-space()='Takipçiler']")
+  //  public static WebElement takipcilerButonu;
 
-    @FindBy(xpath = "//span[contains(text(),'Takipçiler')]" +
-            "")
-    public static WebElement takipcilerButonu;
+   @FindBy(xpath = "//span[normalize-space()='Takipçiler']")
+   public static WebElement takipcilerButonu;
 
     @FindBy(xpath = "//th[@aria-label='Name']  ")
     public static WebElement Name;
