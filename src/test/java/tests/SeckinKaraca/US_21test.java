@@ -1,11 +1,13 @@
 package tests.SeckinKaraca;
 
+import org.checkerframework.checker.units.qual.A;
 import org.checkerframework.checker.units.qual.K;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.SeckinKaraca.US_21page;
 import utilities.Driver;
@@ -29,19 +31,44 @@ public class US_21test {
         ReusableMethods.bekle();
         us_21page.raporlar.click();
         ReusableMethods.bekle();
-        Actions actions=new Actions(Driver.getDriver());
-        actions.moveToElement(us_21page.yillikRapor).sendKeys(Keys.ENTER);
+        //Actions actions=new Actions(Driver.getDriver());
+        //actions.moveToElement(us_21page.yillikRapor).perform(); (bunlar calismadi)
+        ReusableMethods.birAsagi();
+        ReusableMethods.bekle();
+        ReusableMethods.birAsagi();
+        ReusableMethods.bekle();
+        ReusableMethods.birAsagi();
+        ReusableMethods.bekle();
+        us_21page.yillikRapor.click();
+        ReusableMethods.bekle();
+        ReusableMethods.birAsagi();
+        ReusableMethods.bekle();
+        ReusableMethods.birAsagi();
+        ReusableMethods.bekle();
+        Assert.assertTrue(us_21page.yillikRapor.isEnabled());
+        ReusableMethods.bekle();
+        Assert.assertTrue(us_21page.enSonAy.isEnabled());
+        ReusableMethods.bekle();
+        Assert.assertTrue(us_21page.buAy.isEnabled());
+        ReusableMethods.bekle();
+        Assert.assertTrue(us_21page.sonYediGün.isEnabled());
+        ReusableMethods.bekle();
+        Assert.assertTrue(us_21page.birGünsec.isEnabled());
+        ReusableMethods.bekle();
+        us_21page.birGünsec.click();
+        ReusableMethods.bekle();
+        ReusableMethods.sayfaAltı();
+        ReusableMethods.bekle();
+        us_21page.ikiHaziran.click();
+        us_21page.onAltiHaziran.click();
+        ReusableMethods.bekle();
+        String expectedYaziElementi="Sales by Date - From 2022-06-02 to 2022-06-16";
+        String actuelYaziElementi=us_21page.yazıElementi.getText();
+        Assert.assertTrue(actuelYaziElementi.equals(expectedYaziElementi));
         ReusableMethods.bekle();
 
 
-
-
-
-
-
-
-
-
+        Driver.closeDriver();
 
     }
 }
