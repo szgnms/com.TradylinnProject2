@@ -73,7 +73,7 @@ public class Us_003Test {
             int kacinciUrun = rastgele.nextInt(urunSayisi);
             String urn = "(//*[@class='product-wrap'])" + "[" + kacinciUrun + "]";
             System.out.println(urn);
-            WebElement urnElemnt=Driver.getDriver().findElement(By.xpath("(//*[@class='product-wrap'])" + "[" + kacinciUrun + "]/div"));
+           WebElement urnElemnt=Driver.getDriver().findElement(By.xpath("(//*[@class='product-wrap'])" + "[" + kacinciUrun + "]/div"));
             urnElemnt.click();
                         JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
             executor.executeScript("arguments[0].click();", urnElemnt);
