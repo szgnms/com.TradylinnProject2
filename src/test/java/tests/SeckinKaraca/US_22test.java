@@ -55,7 +55,7 @@ public class US_22test {
         String actuelİlkSira=select.getFirstSelectedOption().getText();
         Assert.assertTrue(actuelİlkSira.equals(expectedİlkSira));
 
-        Driver.closeDriver();
+        Driver.closeDriver(); //devam ediyor
 
     }
 }
