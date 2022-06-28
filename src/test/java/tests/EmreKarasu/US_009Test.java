@@ -27,6 +27,8 @@ public class US_009Test extends Driver {
         page.yeniEkle.click();
         Thread.sleep(5000);
 
+        JavascriptExecutor js2 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
+        js2.executeScript("window.scrollBy(0,1100)");
         page.shipping.click();
         Thread.sleep(2000);
 
