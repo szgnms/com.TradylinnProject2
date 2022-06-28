@@ -10,8 +10,5 @@
         <module name="com.TradylinnProject" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="com.TestNg2022" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
