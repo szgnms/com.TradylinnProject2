@@ -16,8 +16,30 @@ public class US_003Page {
     @FindBy(xpath = "//form[@class='woocommerce-ordering toolbox-item toolbox-sort select-box']")
     public WebElement varsayılanSıralama;
 
+    @FindBy(xpath = "//button[@class='single_add_to_cart_button button alt']")
+    public WebElement sepeteEkleButton;
+
+    @FindBy(xpath = "(//*[@class='product-wrap'])")
+    public WebElement urunler;
+
+    @FindBy(xpath = "//*[@class='stock out-of-stock']")
+    public WebElement stoktaYok;
+
+    @FindBy(xpath = "//*[@class='cart-count']")
+    public WebElement sepettekiUrunSayisi;
+
+    @FindBy(xpath = "//*[@class='cart-toggle']")
+    public WebElement sepetim;
+
+    @FindBy(xpath = "//*[@class='checkout-button button alt wc-forward']")
+    public WebElement checkOut;
+
+    @FindBy(xpath = "//*[@class='woocommerce-billing-fields__field-wrapper row gutter-sm']")
+    public WebElement faturaTablosu;
+
+    @FindBy(xpath = "//*[@class='button wc-forward']")
+    public WebElement sepetiGoruntule;
 
 
+    }
 
-
-}
