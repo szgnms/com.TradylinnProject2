@@ -24,6 +24,7 @@ public class US_016 {
     public void musteriTableHeadGorunurlulukTesti() throws InterruptedException {
 
         ReusableMethods.tradylinnStoreManager();
+        ReusableMethods.waitForPageToLoad(10);
         us_016_musterilerPage.musterilerButonu.click();
         Assert.assertTrue(us_016_musterilerPage.nameYazisi.isDisplayed());
         Assert.assertTrue(us_016_musterilerPage.usernameYazisi.isDisplayed());
@@ -31,6 +32,8 @@ public class US_016 {
         Assert.assertTrue(us_016_musterilerPage.locationYazisi.isDisplayed());
         Assert.assertTrue(us_016_musterilerPage.moneySpentYazisi.isDisplayed());
         Assert.assertTrue(us_016_musterilerPage.lastOrdeYazisi.isDisplayed());
+
+        Driver.closeDriver();
     }
 
     @Test (priority = 2) // TC0002
@@ -40,14 +43,13 @@ public class US_016 {
         String ortakKisimPDF="\\Downloads\\Store Manager – Tradylinn.pdf";
         String ortakKisimExcel="\\Downloads\\Store Manager – Tradylinn.xlsx";
         String ortakKisimCsv="\\Downloads\\Store Manager – Tradylinn.csv";
-
-
-
         String pdfDosyaYolu = farkliKisim + ortakKisimPDF;
         String excelDosyaYolu = farkliKisim + ortakKisimExcel;
         String csvDosyaYolu = farkliKisim + ortakKisimCsv;
 
-
+        ReusableMethods.tradylinnStoreManager();
+        ReusableMethods.waitForPageToLoad(10);
+        us_016_musterilerPage.musterilerButonu.click();
         us_016_musterilerPage.downloadPDFbutonu.click();
         Thread.sleep(2000);
         Assert.assertTrue(Files.exists(Paths.get(pdfDosyaYolu)));
@@ -57,34 +59,20 @@ public class US_016 {
         us_016_musterilerPage.downloadCSVbutonu.click();
         Thread.sleep(2000);
         Assert.assertTrue(Files.exists(Paths.get(csvDosyaYolu)));
+
+        Driver.closeDriver();
     }
 
     @Test (priority = 3)  //TC0003
     public void yeniMusteriEklemeTesti() throws InterruptedException {
 
         us_016_musterilerPage.yeniEkleButonu.click();
+        ReusableMethods.waitForPageToLoad(10);
         us_016_yeniMusteriEklePage.usernameTextbox.sendKeys(faker.name().username());
         us_016_yeniMusteriEklePage.emailTextbox.sendKeys(faker.internet().emailAddress());
         us_016_yeniMusteriEklePage.firstNameTextbox.sendKeys(faker.name().firstName());
         us_016_yeniMusteriEklePage.lastNameTextbox.sendKeys(faker.name().lastName());
-        actions.moveToElement(us_016_yeniMusteriEklePage.usernameTextbox).click()
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.TAB)
-                .sendKeys(Keys.SPACE)
-                .perform();
+        ReusableMethods.jsClick(us_016_yeniMusteriEklePage.submitButonu);
         Thread.sleep(3000);
 
         Driver.closeDriver();

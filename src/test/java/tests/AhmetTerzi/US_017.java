@@ -19,12 +19,12 @@ public class US_017 {
 
 
 
-    @Test(priority = 1)//TC0002
+    @Test //TC0001
     public void faturaAdresEklemeTest() throws InterruptedException {
 
         ReusableMethods.tradylinnStoreManager();
-        Thread.sleep(5000);
         us_016_musterilerPage.musterilerButonu.click();
+        Thread.sleep(5000);
         us_016_musterilerPage.yeniEkleButonu.click();
         us_016_017_yeniMusteriEklePage.usernameTextbox.sendKeys(faker.name().username());
         us_016_017_yeniMusteriEklePage.emailTextbox.sendKeys(faker.internet().emailAddress());
@@ -50,11 +50,11 @@ public class US_017 {
         Driver.closeDriver();
     }
 
-    @Test(priority = 2) //TC0002
+    @Test //TC0002
     public void shippingCheckboxTest() throws InterruptedException {
 
         ReusableMethods.tradylinnStoreManager();
-        Thread.sleep(5000);
+        ReusableMethods.waitForPageToLoad(15);
         us_016_musterilerPage.musterilerButonu.click();
         us_016_musterilerPage.yeniEkleButonu.click();
         us_016_017_yeniMusteriEklePage.usernameTextbox.sendKeys(faker.name().username());
@@ -87,11 +87,11 @@ public class US_017 {
     }
 
 
-    @Test(priority = 3) //TC0003
+    @Test //TC0003
     public void shippingAdressTest() throws InterruptedException {
 
         ReusableMethods.tradylinnStoreManager();
-        ReusableMethods.waitForPageToLoad(15);
+        ReusableMethods.waitForPageToLoad(10);
         us_016_musterilerPage.musterilerButonu.click();
         us_016_musterilerPage.yeniEkleButonu.click();
         us_016_017_yeniMusteriEklePage.usernameTextbox.sendKeys(faker.name().username());
