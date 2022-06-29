@@ -11,5 +11,8 @@
         <module name="com.TradylinnProject" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="com.TradylinnProject" target="16" />
+    </bytecodeTargetLevel>
   </component>
 </project>
