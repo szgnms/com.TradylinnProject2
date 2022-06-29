@@ -77,15 +77,14 @@ public class US_016_017yeniMusteriEklePage {
     @FindBy(xpath = "//input[@id='scity']")
     public WebElement shippingCityTextBox;
 
-    @FindBy(xpath = "//input[@id='sstate']")
-    public WebElement shippingStateTextbox;
+    @FindBy(xpath = "//select[@id='sstate']")
+    public WebElement shippingStateddm;
 
     @FindBy(xpath = "//input[@id='szip']")
     public WebElement shippingPostcodeTextbox;
 
     @FindBy(xpath = "//input[@id='wcfm_customer_submit_button']")
     public WebElement submitButonu;
-
 
 
 
