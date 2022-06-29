@@ -8,14 +8,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectResources">
-    <resource url="http://jakarta.apache.org/log4j" location="$PROJECT_DIR$" />
-  </component>
-<<<<<<< HEAD
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="18" project-jdk-type="JavaSDK">
-=======
   <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="18" project-jdk-type="JavaSDK">
->>>>>>> 14d217c1aba298589e14cb8bef3887df55dbd4a1
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="ProjectType">
