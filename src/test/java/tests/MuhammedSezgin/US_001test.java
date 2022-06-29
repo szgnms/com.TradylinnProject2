@@ -1,6 +1,6 @@
 package tests.MuhammedSezgin;
 
-import org.testng.Assert;
+
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.MuhammedSezgin.US_001page;
@@ -17,10 +17,16 @@ public class US_001test extends TestBaseRapor {
     //Vendor olarak kayıt icin ‘Become a vendor’ butonu ile navigate ediniz
     @Test
     public void becomeVendor() {
+        extentTest=extentReports.createTest("Vendor olarak kayıt icin ‘Become a vendor’ butonu ile navigate ediniz");
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
+        extentTest.info("Url`ye gidilir");
+        ReusableMethods.bekle();
         us1.uyeOlButton.click();
+        extentTest.info("uye ola tiklanir");
         us1.vendorButton.click();
+        extentTest.info("become a vendor a tiklanir");
         sf.assertTrue(us1.vendorRegisterPage.isDisplayed());
+        extentTest.pass("vendor registration sayfasinin acildigi dogrulanir");
         sf.assertAll();
     }
 
@@ -45,7 +51,6 @@ public class US_001test extends TestBaseRapor {
         us1.registerButton.click();
         sf.assertTrue(us1.registerEmailErrorBosMail.isDisplayed());
         sf.assertAll();
-
     }
 
     @Test

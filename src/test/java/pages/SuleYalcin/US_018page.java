@@ -12,21 +12,24 @@ public class US_018page {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//span[@class='text'][normalize-space()='Emirler']")
+    @FindBy(xpath = "(//*[@id='wcfm_menu']//div)[6]")
     public static WebElement emirlerLinki;
 
 
   /*  @FindBy(xpath = "(//span[text()='Emirler'])[1]")
     public static WebElement emirlerLinki;*/
 
-    @FindBy(xpath = "(//span[@data-tip='Refund Request'])[1]")
-    public static WebElement refundRequest;
+    @FindBy(xpath = "//textarea[@id='wcfm_refund_reason']")
+    public static WebElement refundRequestReason;
 
     @FindBy(xpath = "//tbody//tr[1]//td[3]//select[1]")
     public static WebElement qty;
 
-    @FindBy(xpath = "//textarea[@id='wcfm_refund_reason']")
-    public static WebElement refundRequestReason;
+    @FindBy(xpath = "((//*[@id='wcfm-orders']//td)[9]//a)[2]")
+    public static WebElement refundRequest;
+
+    @FindBy(xpath = "(//*[@data-tip='Mark as Complete'])[1]")
+    public static WebElement markAsComplete;
 
 
     @FindBy(xpath = "//input[@id='wcfm_refund_requests_submit_button']")

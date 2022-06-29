@@ -15,13 +15,20 @@ public class US_002test extends TestBaseRapor {
     SoftAssert sf = new SoftAssert();
 
     //Vendor olarak kayıt icin ‘Become a vendor’ butonu ile navigate ediniz
-    @Test
+    @Test (groups = "smoketests")
     public void vendorLogin() {
+        extentTest.info("vendor girisi yapildi");
         ReusableMethods.tradylinnHesabim();
-        sf.assertTrue(us2.myAccountText.isDisplayed());
-        sf.assertAll();
+        //sf.assertTrue(us2.myAccountText.isDisplayed());
+        //sf.assertAll();
     }
-
+    @Test (groups = "smoketests")
+    public void purchase() {
+        extentTest.info("urun satinalma yapildi");
+        ReusableMethods.purchaseMethod();
+        //sf.assertTrue(us2.myAccountText.isDisplayed());
+        //sf.assertAll();
+    }
     @Test
     public void linkControl() {
         ReusableMethods.tradylinnHesabim();
