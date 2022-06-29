@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
 
 import java.io.File;
 import java.io.IOException;
@@ -132,6 +133,14 @@ public class ReusableMethods {
     }
 
 
+<<<<<<< HEAD
+    @BeforeClass
+    public void beforeClass() {
+
+    }
+
+=======
+>>>>>>> 14d217c1aba298589e14cb8bef3887df55dbd4a1
     public static void tradylinnHesabim() {
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
         bekle();
