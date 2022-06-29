@@ -21,7 +21,37 @@ import java.util.List;
 
 
 public class ReusableMethods {
-    public static void traddylinnCreateAccount() {
+    public static void purchaseMethod(){
+        tradylinnGiris();
+        bekle();
+        bekle();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("(//*[@type='search'])[1]")).sendKeys("sweet"+Keys.ENTER);
+        hover(Driver.getDriver().findElement(By.xpath("//*[@class='product-archive']//figure")));
+        Driver.getDriver().findElement(By.xpath("(//*[@class='product-action-vertical']//a)[1]")).click();
+        Driver.getDriver().findElement(By.xpath("//*[@class='cart-toggle']")).click();
+        bekle();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("//*[@class='button checkout wc-forward']")).click();
+        scroolDowntoPixel(700);
+        bekle();
+        bekle();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("//*[@id='wcfmmp_user_location']")).sendKeys("Istanbul");
+        bekle();
+        bekle();
+        bekle();
+        Driver.getDriver().findElement(By.xpath("//button[@id='place_order']")).click();
+
+    }
+
+    public static void scroolDowntoPixel(int pixel) {
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("scroll(0, " + pixel + ");");
+    }
+
+
+    public static void traddylinnCreateAccount(){
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
         Driver.getDriver().findElement(By.xpath("//span[normalize-space()='Üye Ol']")).click();
         Driver.getDriver().findElement(By.xpath("//*[@class='wcfmmp_become_vendor_link']//a")).click();
@@ -77,17 +107,23 @@ public class ReusableMethods {
         Driver.getDriver().findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
         Driver.getDriver().findElement(By.xpath("(//*[@type='submit'])[1]")).click();
     }
-
+    public static void jsClick(WebElement element){
+        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
+        jse.executeScript("arguments[0].click();", element);}
 
     public static void tradylinnStoreManager() {
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
         bekle();
         Driver.getDriver().findElement(By.xpath("//span[contains(text(),'Giriş Yap')]")).click();
         bekle();
+        bekle();
+        bekle();
         Driver.getDriver().findElement(By.xpath("(//*[@type='text'])[1]")).sendKeys(ConfigReader.getProperty("tradEmail"));
         Driver.getDriver().findElement(By.xpath("(//*[@name='password'])[1]")).sendKeys(ConfigReader.getProperty("tradPass"));
         Driver.getDriver().findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
         Driver.getDriver().findElement(By.xpath("(//*[@type='submit'])[1]")).click();
+        bekle();
+        bekle();
         bekle();
         Driver.getDriver().findElement(By.xpath("//*[@id='menu-item-1074']")).click();
         bekle();
