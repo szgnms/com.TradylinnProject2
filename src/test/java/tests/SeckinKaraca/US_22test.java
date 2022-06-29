@@ -12,6 +12,7 @@ import utilities.Driver;
 import utilities.ReusableMethods;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class US_22test {
@@ -161,6 +162,22 @@ public class US_22test {
         String actuelİlkSira=select.getFirstSelectedOption().getText();
         Assert.assertTrue(actuelİlkSira.equals(expectedİlkSira));
 
+       /* ArrayList<Double> urunlerDouble = new ArrayList<>();
+
+        for (WebElement each: us_22page.fiyatlar){
+            // String fiyatStr = each.getText().replaceAll("$", "");
+            String fiyatStr = each.getText().replaceAll("^\\D", "");
+            urunlerDouble.add(Double.parseDouble(fiyatStr));
+        }
+
+        ArrayList<Double> kontrolListe = new ArrayList<>(urunlerDouble);
+        Collections.sort(kontrolListe);
+
+        Assert.assertEquals(kontrolListe,urunlerDouble);
+
+        */
+
+
         Driver.closeDriver();
     }
 
@@ -193,6 +210,20 @@ public class US_22test {
         String expectedİlkSira="Fiyata göre sırala: Yüksekten düşüğe";
         String actuelİlkSira=select.getFirstSelectedOption().getText();
         Assert.assertTrue(actuelİlkSira.equals(expectedİlkSira));
+         /* ArrayList<Double> urunlerDouble = new ArrayList<>();
+
+        for (WebElement each: us_22page.fiyatlar){
+            // String fiyatStr = each.getText().replaceAll("$", "");
+            String fiyatStr = each.getText().replaceAll("^\\D", "");
+            urunlerDouble.add(Double.parseDouble(fiyatStr));
+        }
+
+        ArrayList<Double> kontrolListe = new ArrayList<>(urunlerDouble);
+        Collections.sort(kontrolListe);
+
+        Assert.assertEquals(kontrolListe,urunlerDouble);
+
+        */
 
 
         Driver.closeDriver();
