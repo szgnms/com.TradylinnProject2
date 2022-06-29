@@ -6,6 +6,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utilities.Driver;
 
+import java.util.List;
+
 public class US_22page {
     public US_22page() {
         PageFactory.initElements(Driver.getDriver(),this);
@@ -15,7 +17,7 @@ public class US_22page {
     @FindBy(xpath = "//select[@class='orderby form-control']")
     public WebElement siralama;
     @FindBy(xpath = "//span[@class='woocommerce-Price-amount amount']")
-    public WebElement fiyatlar;
+    public List <WebElement> fiyatlar;
     @FindBy(xpath = "(//h3[@class='woocommerce-loop-product__title'])[1]")
     public WebElement enUcuz;
     @FindBy(xpath = "(//span[@class='woocommerce-Price-amount amount'])[18]")

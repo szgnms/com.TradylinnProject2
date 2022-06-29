@@ -21,7 +21,7 @@ import java.util.List;
 
 
 public class ReusableMethods {
-    public static void traddylinnCreateAccount(){
+    public static void traddylinnCreateAccount() {
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
         Driver.getDriver().findElement(By.xpath("//span[normalize-space()='Üye Ol']")).click();
         Driver.getDriver().findElement(By.xpath("//*[@class='wcfmmp_become_vendor_link']//a")).click();
@@ -32,33 +32,33 @@ public class ReusableMethods {
         Driver.getDriver().findElement(By.xpath("//input[@id='wcfm_membership_register_button']")).click();
     }
 
-    public static void tradylinnGmailAccountSubmit(){
+    public static void tradylinnGmailAccountSubmit() {
         Driver.getDriver().get(ConfigReader.getProperty("mailUrl"));
         Driver.getDriver().findElement(By.xpath("//a[contains(text(),'Oturum açın')]")).click();
         Driver.getDriver().findElement(By.xpath("//input[@id='identifierId']")).sendKeys(ConfigReader.getProperty("tradEmail"));
         Driver.getDriver().findElement(By.xpath("//span[contains(text(),'İleri')]")).click();
         Driver.getDriver().findElement(By.xpath("//input[@name='password']")).sendKeys(ConfigReader.getProperty("tradPass"));
         Driver.getDriver().findElement(By.xpath("//span[contains(text(),'İleri')]")).click();
-        ArrayList<WebElement> mailList =new ArrayList<>(Driver.getDriver().findElements(By.xpath("//div[@class='yW']")));
-        for (WebElement w:mailList
-             ) {
-            if (w.getText().contains("Tradylinn")){
+        ArrayList<WebElement> mailList = new ArrayList<>(Driver.getDriver().findElements(By.xpath("//div[@class='yW']")));
+        for (WebElement w : mailList
+        ) {
+            if (w.getText().contains("Tradylinn")) {
                 w.click();
             }
         }
         Driver.getDriver().findElement(By.xpath("//a[normalize-space()='click here']")).click();
-        ArrayList<String> handles =new ArrayList<>(Driver.getDriver().getWindowHandles());
+        ArrayList<String> handles = new ArrayList<>(Driver.getDriver().getWindowHandles());
         Driver.getDriver().switchTo().window(handles.get(1));
         Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//h2[@class='page-title']")).isDisplayed());
 
     }
 
-    public static void anasayfaDogrula(){
+    public static void anasayfaDogrula() {
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(" https://tradylinn.com"));
     }
 
 
-    public static void bekle(){
+    public static void bekle() {
         try {
             Thread.sleep(3000);
         } catch (InterruptedException e) {
@@ -67,9 +67,7 @@ public class ReusableMethods {
     }
 
 
-
-
-    public static void tradylinnGiris(){
+    public static void tradylinnGiris() {
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
         bekle();
         Driver.getDriver().findElement(By.xpath("//span[contains(text(),'Giriş Yap')]")).click();
@@ -81,7 +79,7 @@ public class ReusableMethods {
     }
 
 
-    public static void tradylinnStoreManager(){
+    public static void tradylinnStoreManager() {
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
         bekle();
         Driver.getDriver().findElement(By.xpath("//span[contains(text(),'Giriş Yap')]")).click();
@@ -96,7 +94,6 @@ public class ReusableMethods {
         Driver.getDriver().findElement(By.xpath("(//*[@class='woocommerce-MyAccount-navigation col-md-3 mb-8']//li)[2]")).click();
 
     }
-
 
 
     public static void tradylinnHesabim() {
@@ -125,6 +122,7 @@ public class ReusableMethods {
         FileUtils.copyFile(source, finalDestination);
         return target;
     }
+
     public static void getScreenshotWebElement(String name, WebElement element) throws IOException {
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         // TakesScreenshot is an interface of selenium that takes the screenshot
@@ -243,11 +241,13 @@ public class ReusableMethods {
                 .pollingEvery(Duration.ofSeconds(1));//Check for the element every 1 second
         return wait.until(driver -> webElement);
     }
+
     //seckin
-    public static void sayfaAltı(){
-        Actions actions=new Actions(Driver.getDriver());
+    public static void sayfaAltı() {
+        Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.PAGE_DOWN).perform();
     }
+
     public static void birAsagi() {
         Actions actions = new Actions(Driver.getDriver());
         actions.sendKeys(Keys.DOWN).perform();
