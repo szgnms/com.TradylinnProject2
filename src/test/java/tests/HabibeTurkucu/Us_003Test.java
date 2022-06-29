@@ -10,9 +10,7 @@ import pages.HabibeTurkucu.US_003Page;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Us_003Test {
 
@@ -73,12 +71,12 @@ public class Us_003Test {
             int kacinciUrun = rastgele.nextInt(urunSayisi);
             String urn = "(//*[@class='product-wrap'])" + "[" + kacinciUrun + "]";
             System.out.println(urn);
-           WebElement urnElemnt=Driver.getDriver().findElement(By.xpath("(//*[@class='product-wrap'])" + "[" + kacinciUrun + "]/div"));
+            WebElement urnElemnt = Driver.getDriver().findElement(By.xpath("(//*[@class='product-wrap'])" + "[" + kacinciUrun + "]/div"));
             urnElemnt.click();
-                        JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
+            JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
             executor.executeScript("arguments[0].click();", urnElemnt);
-//            executor.executeScript("arguments[0].click();", urnElemnt);
-//            urnElemnt.click();
+            executor.executeScript("arguments[0].click();", urnElemnt);
+            urnElemnt.click();
             ReusableMethods.bekle();
             if (usPage3.sepeteEkleButton.isDisplayed()) {
                 usPage3.sepeteEkleButton.click();
@@ -95,9 +93,8 @@ public class Us_003Test {
 
     //sepete ve oradan checkouta gidilmeli
     @Test
-    public void checkOut(){
-//       sepeteUrunEkle();
-       usPage3.sepetim.click();
+    public void checkOut() throws InterruptedException {
+  /*       usPage3.sepetim.click();
        usPage3.sepetiGoruntule.click();
         JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
         ((JavascriptExecutor) Driver.getDriver()).executeScript("arguments[0].scrollIntoView(true);", usPage3.checkOut);
@@ -105,8 +102,70 @@ public class Us_003Test {
 
         Assert.assertTrue(usPage3.faturaTablosu.isDisplayed());
 
+   */
+        /*
+        public static List<String> getElementsText(List<WebElement> list) {
+        List<String> elemTexts = new ArrayList<>();
+        for (WebElement el : list) {
+            if (!el.getText().isEmpty()) {
+                elemTexts.add(el.getText());
+            }
+        }
+        return elemTexts;
+    }
+         */
+        ReusableMethods.tradylinnGiris();
+//        Driver.getDriver().findElement(By.xpath("(//*[@class='w-icon-cart'])[1])")).click();
+        usPage3.sepetim.click();
+        usPage3.sepetiGoruntule.click();
+        Thread.sleep(10000);
+        List<WebElement> sepettekiUrunler = new ArrayList<>();
+        sepettekiUrunler.add(usPage3.urun1);
+        sepettekiUrunler.add(usPage3.urun2);
+        sepettekiUrunler.add(usPage3.urun3);
+        sepettekiUrunler.add(usPage3.urun4);
+        sepettekiUrunler.add(usPage3.urun5);
+
+
+        for (int i = 0; i < 5; i++) {
+            Assert.assertTrue(sepettekiUrunler.get(i).isDisplayed());
+            ReusableMethods.birAsagi();
+        }
+
+        usPage3.odemeButton.click();
+        Assert.assertTrue(usPage3.faturaTablosu.isDisplayed());
+
+
+    }
+
+
+    @Test
+    public void siparisOnaylama() {
+        ReusableMethods.tradylinnStoreManager();
+        usPage3.sepetim.click();
+        usPage3.sepetiGoruntule.click();
+        usPage3.checkOut.click();
+        Assert.assertTrue(usPage3.faturaTablosu.isDisplayed());
+        usPage3.isim.sendKeys("ayse");
+        usPage3.syisim.sendKeys("akca");
+        usPage3.sokakAdres.sendKeys("123 sok no 25");
+        ReusableMethods.birAsagi();
+        usPage3.postaKodu.sendKeys("1020");
+        usPage3.ilce.sendKeys("baglar");
+        ReusableMethods.birAsagi();
+        usPage3.teslimatAdresi.sendKeys("1525 sok no 21");
+        usPage3.siparisOnayla.click();
+        Assert.assertTrue(usPage3.tesekkurYazisi.isDisplayed());
+
+
+
+
+
+
 
     }
 
 
 }
+
+
