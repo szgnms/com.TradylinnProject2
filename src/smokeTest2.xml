@@ -1,9 +1,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="smoke">
-    <test name="hesap giris testi ">
+
+<suite name="smoke test" verbose="3" >
+    <test name="smoketests1">
+        <groups>
+            <run>
+                <include name="smoketests"/>
+            </run>
+        </groups>
         <packages>
-            <package name="tests.MuhammedSezgin.US_001test"/>
+            <package name="tests.MuhammedSezgin"/>
         </packages>
-        <
     </test>
 </suite>
