@@ -15,8 +15,8 @@ import java.util.Date;
 
 public abstract class TestBaseRapor {
 
-    protected   ExtentReports extentReports;
-    protected   ExtentTest extentTest;
+    protected static ExtentReports extentReports;
+    protected static ExtentTest extentTest;
     protected   ExtentSparkReporter extentHtmlReporter;
 
 
@@ -32,7 +32,7 @@ public abstract class TestBaseRapor {
 
         extentReports.setSystemInfo("Environment","QA");
         extentReports.setSystemInfo("Browser", ConfigReader.getProperty("browser")); // chrome, firefox
-        extentReports.setSystemInfo("Automation Engineer", "Evren");
+        extentReports.setSystemInfo("Automation Engineer", "SZGN");
         extentHtmlReporter.config().setDocumentTitle("Rapor");
         extentHtmlReporter.config().setReportName("TestNG Reports");
     }
@@ -41,9 +41,9 @@ public abstract class TestBaseRapor {
     public void tearDownMethod(ITestResult result) throws IOException {
         if (result.getStatus() == ITestResult.FAILURE) { // eğer testin sonucu başarısızsa
             String screenshotLocation = ReusableMethods.getScreenshot(result.getName());
-           // extentTest.fail(result.getName());
-          //  extentTest.addScreenCaptureFromPath(screenshotLocation);
-           // extentTest.fail(result.getThrowable());
+           extentTest.fail(result.getName());
+           extentTest.addScreenCaptureFromPath(screenshotLocation);
+           extentTest.fail(result.getThrowable());
         } else if (result.getStatus() == ITestResult.SKIP) { // eğer test çalıştırılmadan geçilmezse
             extentTest.skip("Test Case is skipped: " + result.getName()); // Ignore olanlar
         }

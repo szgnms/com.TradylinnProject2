@@ -89,7 +89,7 @@ public class US_21test {
 
     }
 
-    @Test
+    @Test (groups = "smoketests")
     public void testCase05() {
         ReusableMethods.tradylinnStoreManager();
         ReusableMethods.bekle(5);

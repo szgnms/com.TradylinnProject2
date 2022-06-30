@@ -19,7 +19,7 @@ import java.util.Date;
 import java.util.List;
 
 
-public class ReusableMethods {
+public class ReusableMethods extends TestBaseRapor{
 
     public static void sendKeysTab(int sayi) {
         Actions action = new Actions(Driver.getDriver());
@@ -33,6 +33,7 @@ public class ReusableMethods {
         tradylinnGiris();
         bekle(15);
         Driver.getDriver().findElement(By.xpath("(//*[@type='search'])[1]")).sendKeys("sweet" + Keys.ENTER);
+        extentTest.info("Arama TextBox`ina Urun Ismi Gonderildi.");
         hover(Driver.getDriver().findElement(By.xpath("//*[@class='product-archive']//figure")));
         Driver.getDriver().findElement(By.xpath("(//*[@class='product-action-vertical']//a)[1]")).click();
         Driver.getDriver().findElement(By.xpath("//*[@class='cart-toggle']")).click();
@@ -99,14 +100,21 @@ public class ReusableMethods {
 
 
     public static void tradylinnGiris() {
+        extentTest=extentReports.createTest("Vendor Olarak Giris Testi.","Kullanici Vendor Olarak Siteye Giris Yapabilmeli.");
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
+        extentTest.info("Url` ye gidildi.");
         bekle(5);
         Driver.getDriver().findElement(By.xpath("//span[contains(text(),'Giriş Yap')]")).click();
+        extentTest.info("Girisyap Butonuna Click Yapildi.");
         bekle(5);
         Driver.getDriver().findElement(By.xpath("(//*[@type='text'])[1]")).sendKeys(ConfigReader.getProperty("tradEmail"));
+        extentTest.info("Gecerli E-mail Bilgileri Girildi.");
         Driver.getDriver().findElement(By.xpath("(//*[@name='password'])[1]")).sendKeys(ConfigReader.getProperty("tradPass"));
+        extentTest.info("Gecerli Password Girildi.");
         Driver.getDriver().findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
+        extentTest.info("Beni Hatirla Checkbox`ina Tiklandi.");
         Driver.getDriver().findElement(By.xpath("(//*[@type='submit'])[1]")).click();
+        extentTest.pass("Submit Butonuna Click Yapildi.");
     }
 
     public static void jsClick(WebElement element) {
@@ -137,12 +145,6 @@ public class ReusableMethods {
 
     }
 
-
-    @BeforeClass
-    public void beforeClass() {
-
-    }
-
     public static void tradylinnHesabim() {
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
         bekle(5);
@@ -170,12 +172,12 @@ public class ReusableMethods {
         return target;
     }
 
-    public void getScreenshotWebElement(String name, WebElement element) throws IOException {
+    public static void getScreenshotWebElement(String name, WebElement element) throws IOException {
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
         // TakesScreenshot is an interface of selenium that takes the screenshot
         File source = element.getScreenshotAs(OutputType.FILE);
         // full path to the screenshot location
-        String wElementSS = System.getProperty("user.dir") + "/target/WElementScreenshots/" + name + date + ".png";
+        String wElementSS = System.getProperty("user.dir") + "/target/WElementScreenshots/" + name + date + ".jpeg";
         File finalDestination = new File(wElementSS);
         // save the screenshot to the path given
         FileUtils.copyFile(source, finalDestination);

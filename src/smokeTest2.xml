@@ -9,6 +9,7 @@
         </groups>
         <packages>
             <package name="tests.MuhammedSezgin"/>
+            <!--<package name="tests.SeckinKaraca"/> -->
         </packages>
     </test>
 </suite>

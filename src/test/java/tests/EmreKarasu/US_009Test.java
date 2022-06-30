@@ -10,6 +10,8 @@ import utilities.ReusableMethods;
 
 import java.util.List;
 
+import static utilities.ReusableMethods.bekle;
+
 public class US_009Test extends Driver {
     TradylinnPage trd =new TradylinnPage();
 
@@ -18,7 +20,7 @@ public class US_009Test extends Driver {
     public void TC_001_ve_TC_002() throws InterruptedException {
                         //TC_001
         ReusableMethods.tradylinnStoreManager();
-        ReusableMethods.bekle(5);
+        bekle(5);
 
         JavascriptExecutor js1 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
         js1.executeScript("window.scrollBy(0,250)");

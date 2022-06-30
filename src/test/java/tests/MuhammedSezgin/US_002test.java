@@ -5,10 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.TradylinnPage;
-import utilities.ConfigReader;
-import utilities.Driver;
-import utilities.ReusableMethods;
-import utilities.TestBaseRapor;
+import utilities.*;
 
 import static utilities.ReusableMethods.bekle;
 
@@ -20,23 +17,17 @@ public class US_002test extends TestBaseRapor {
     //Vendor olarak kayıt icin ‘Become a vendor’ butonu ile navigate ediniz
     @Test (groups = "smoketests")
     public void vendorLogin()  {
-        TradylinnPage trd =new TradylinnPage();
-       // extentTest=extentReports.createTest("vendorLogin","Gecerli username ve sifre ile giris yapabilmeli");
         ReusableMethods.tradylinnGiris();
-      //  extentTest.info("vendor girisi yapildi");
         sf.assertTrue( trd.bannerText.isDisplayed());
         sf.assertAll();
     }
 
     @Test (groups = "end2end")
     public void purchase() {
-        TradylinnPage trd =new TradylinnPage();
-        extentTest=extentReports.createTest("Urun Satinalma","urun satin alma yapabilmeli");
-        extentTest.info("urun satinalma yapildi");
         ReusableMethods.purchaseMethod();
-        bekle(5);
+        bekle(10);
     }
-    @Test (groups = "smoketests")
+    @Test
     public void linkControl() {
         ReusableMethods.tradylinnHesabim();
         bekle(10);
@@ -49,7 +40,7 @@ public class US_002test extends TestBaseRapor {
         sf.assertAll();
     }
 
-    @Test (groups = "smoketests")
+    @Test
     public void dashboardControl() {
         ReusableMethods.tradylinnHesabim();
         bekle(10);
