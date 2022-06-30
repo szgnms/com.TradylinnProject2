@@ -1,49 +1,33 @@
 package tests.SeckinKaraca;
 
-import org.checkerframework.checker.units.qual.A;
-import org.checkerframework.checker.units.qual.K;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.SeckinKaraca.US_21page;
+import pages.TradylinnPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
-import utilities.TestBaseRapor;
 
-import static pages.SuleYalcin.US_018page.refundRequestReason;
+
 
 public class US_21test {
-    US_21page us_21page;
+    
+    TradylinnPage trd = new TradylinnPage();
+    
     @Test
     public void testCase01() {
-        us_21page=new US_21page();
         ReusableMethods.tradylinnStoreManager();
-        ReusableMethods.bekle();
-        //JavascriptExecutor jse=(JavascriptExecutor) Driver.getDriver();
-        //jse.executeScript("arguments[0].scrollIntoView(true)",US_21page.raporlar);
-        // ReusableMethods.bekle();
-        //jse.executeScript("arguments[0].click(true)",US_21page.raporlar);
-        //ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        us_21page.raporlar.click();
-        ReusableMethods.bekle();
-        //Actions actions=new Actions(Driver.getDriver());
-        //actions.moveToElement(us_21page.yillikRapor).perform(); (bunlar calismadi)
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.bekle();
-        us_21page.yillikRapor.click();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        Assert.assertTrue(us_21page.yillikRapor.isEnabled());
-        ReusableMethods.bekle();
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+         trd.raporlar.click();
+        ReusableMethods.bekle(5);
+        ReusableMethods.birAsagi(3);
+        ReusableMethods.bekle(5);
+         trd.yillikRapor.click();
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+        Assert.assertTrue( trd.yillikRapor.isEnabled());
+        ReusableMethods.bekle(5);
 
 
         Driver.closeDriver();
@@ -52,63 +36,54 @@ public class US_21test {
 
     @Test
     public void testCase02() {
-        us_21page=new US_21page();
         ReusableMethods.tradylinnStoreManager();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        us_21page.raporlar.click();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        us_21page.enSonAy.click();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        Assert.assertTrue(us_21page.enSonAy.isEnabled());
-        ReusableMethods.bekle();
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+         trd.raporlar.click();
+        ReusableMethods.birAsagi(3);
+         trd.enSonAy.click();
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+        Assert.assertTrue( trd.enSonAy.isEnabled());
+        ReusableMethods.bekle(5);
 
         Driver.closeDriver();
 
     }
     @Test
     public void testCace03(){
-        us_21page=new US_21page();
         ReusableMethods.tradylinnStoreManager();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        us_21page.raporlar.click();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        us_21page.buAy.click();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        Assert.assertTrue(us_21page.buAy.isEnabled());
-        ReusableMethods.bekle();
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+         trd.raporlar.click();
+        ReusableMethods.birAsagi(3);
+         trd.buAy.click();
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+        Assert.assertTrue( trd.buAy.isEnabled());
+        ReusableMethods.bekle(5);
 
         Driver.closeDriver();
 
     }
     @Test
     public void testCase04() {
-        us_21page=new US_21page();
         ReusableMethods.tradylinnStoreManager();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        us_21page.raporlar.click();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        us_21page.sonYediGün.click();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        Assert.assertTrue(us_21page.sonYediGün.isEnabled());
-        ReusableMethods.bekle();
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+         trd.raporlar.click();
+        ReusableMethods.birAsagi(3);
+         trd.sonYediGun.click();
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+        Assert.assertTrue( trd.sonYediGun.isEnabled());
+        ReusableMethods.bekle(5);
 
         Driver.closeDriver();
 
@@ -116,28 +91,25 @@ public class US_21test {
 
     @Test
     public void testCase05() {
-        us_21page=new US_21page();
         ReusableMethods.tradylinnStoreManager();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        us_21page.raporlar.click();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        Assert.assertTrue(us_21page.birGünsec.isEnabled());
-        ReusableMethods.bekle();
-        us_21page.birGünsec.click();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        us_21page.ikiHaziran.click();
-        us_21page.onAltiHaziran.click();
-        ReusableMethods.bekle();
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+         trd.raporlar.click();
+        ReusableMethods.birAsagi(3);
+        Assert.assertTrue( trd.birGunsec.isEnabled());
+        ReusableMethods.bekle(5);
+         trd.birGunsec.click();
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+         trd.ikiHaziran.click();
+         trd.onAltiHaziran.click();
+        ReusableMethods.bekle(5);
         String expectedYaziElementi="Sales by Date - From 2022-06-02 to 2022-06-16";
-        String actuelYaziElementi=us_21page.yazıElementi.getText();
-        Assert.assertTrue(actuelYaziElementi.equals(expectedYaziElementi));
-        ReusableMethods.bekle();
+        String actuelYaziElementi= trd.yaziElementi.getText();
+        Assert.assertEquals(expectedYaziElementi, actuelYaziElementi);
+        ReusableMethods.bekle(5);
 
         Driver.closeDriver();
     }

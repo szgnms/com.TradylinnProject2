@@ -4,57 +4,58 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.EmreKarasu.US_08_09_10_Page;
+import pages.TradylinnPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
-import java.io.IOException;
 
 public class US_008Test {
-    US_08_09_10_Page page = new US_08_09_10_Page();
+    TradylinnPage trd =new TradylinnPage();
+
+
 
     @Test
-    public void TC_001_ve_TC_002() throws InterruptedException, IOException {
+    public void TC_001_ve_TC_002() throws InterruptedException {
                         //TC_001
         ReusableMethods.tradylinnStoreManager();
-        ReusableMethods.bekle();
+        ReusableMethods.bekle(5);
 
         JavascriptExecutor js1 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
         js1.executeScript("window.scrollBy(0,250)");
 
-        page.urun.click();
-        page.urun.clear();
+        trd.urun.click();
+        trd.urun.clear();
         Thread.sleep(5000);
 
-        page.yeniEkle.click();
+        trd.yeniEkle.click();
         Thread.sleep(5000);
 
         JavascriptExecutor js2 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
         js2.executeScript("window.scrollBy(0,1100)");
-        page.manageStockTik.click();
+        trd.manageStockTik.click();
         Thread.sleep(5000);
 
-        page.manageStockKutu.click();
-        page.manageStockKutu.clear();
+        trd.manageStockKutu.click();
+        trd.manageStockKutu.clear();
         Thread.sleep(5000);
 
-        page.manageStockKutu.sendKeys("20" + Keys.ENTER);
+        trd.manageStockKutu.sendKeys("20" + Keys.ENTER);
         Thread.sleep(3000);
 
-        System.out.println(page.manageStockKutu.getText());
-        Assert.assertTrue(page.manageStockKutu.getText().contains("20"));
+        System.out.println(trd.manageStockKutu.getText());
+        Assert.assertTrue(trd.manageStockKutu.getText().contains("20"));
 
 
                         //TC_002
-        if (!page.Allow.isSelected()) {
-            page.Allow.click();
+        if (!trd.Allow.isSelected()) {
+            trd.Allow.click();
         }
 
-        if (!page.AllowButNotifyCustomer.isSelected()) {
-            page.AllowButNotifyCustomer.click();
+        if (!trd.AllowButNotifyCustomer.isSelected()) {
+            trd.AllowButNotifyCustomer.click();
         }
 
-        if (!page.DoNotAllow.isSelected()) {
-            page.DoNotAllow.click();
+        if (!trd.DoNotAllow.isSelected()) {
+            trd.DoNotAllow.click();
         }
 
         Driver.closeDriver();

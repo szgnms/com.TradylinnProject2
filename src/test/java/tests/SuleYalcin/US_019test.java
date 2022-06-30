@@ -1,43 +1,34 @@
 package tests.SuleYalcin;
 
-import org.openqa.selenium.JavascriptExecutor;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.SuleYalcin.US_019page;
-import utilities.Driver;
+import pages.TradylinnPage;
+
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
 
-import static pages.SuleYalcin.US_018page.requestId;
-import static pages.SuleYalcin.US_019page.*;
 import static utilities.ReusableMethods.bekle;
-import static utilities.ReusableMethods.hover;
+
 
 public class US_019test extends TestBaseRapor {
-   public  US_019test(){
 
-   }
+    TradylinnPage trd = new TradylinnPage();
 
     @Test
-    public void takipciler() throws InterruptedException {
+    public void takipciler()  {
 
-       // ReusableMethods.tradylinnGiris();
-        //ReusableMethods.tradylinnHesabim();
+
         ReusableMethods.tradylinnStoreManager();
-     /*
-        JavascriptExecutor jse = (JavascriptExecutor) Driver.getDriver();
-        jse.executeScript("arguments[0].scrollIntoView(true);",takipcilerButonu);
-        bekle();*/
-       // Thread.sleep(15000);
-        //hover(takipcilerButonu);
-        takipcilerButonu.click();
-        bekle();
 
-        Assert.assertTrue(Name.isDisplayed());
-        bekle();
-        Assert.assertTrue(Eposta.isDisplayed());
-        bekle();
-        Assert.assertTrue(islem.isDisplayed());
+        trd.takipcilerButonu.click();
+        bekle(5);
+
+        Assert.assertTrue(trd.name.isDisplayed());
+        bekle(5);
+        Assert.assertTrue(trd.eposta.isDisplayed());
+        bekle(5);
+        Assert.assertTrue(trd.islem.isDisplayed());
 
 
     }

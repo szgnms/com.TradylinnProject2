@@ -15,9 +15,9 @@ import java.util.Date;
 
 public abstract class TestBaseRapor {
 
-    protected static ExtentReports extentReports;
-    protected static ExtentTest extentTest;
-    protected static ExtentSparkReporter extentHtmlReporter;
+    protected   ExtentReports extentReports;
+    protected   ExtentTest extentTest;
+    protected   ExtentSparkReporter extentHtmlReporter;
 
 
     @BeforeTest(alwaysRun = true) //

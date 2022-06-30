@@ -1,43 +1,34 @@
 package tests.SeckinKaraca;
 
-import org.apache.xmlbeans.impl.xb.xsdschema.ListDocument;
-import org.checkerframework.checker.units.qual.A;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.SeckinKaraca.US_22page;
+import pages.TradylinnPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-
 public class US_22test {
-    US_22page us_22page;
+    TradylinnPage trd =new TradylinnPage();
     @Test
     public void testCase01() {
-        us_22page=new US_22page();
+     
         //ReusableMethods.tradylinnGiris();
         Driver.getDriver().get("https://tradylinn.com/");
-        ReusableMethods.bekle();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.bekle();
-        us_22page.tümünügör.click();
-        ReusableMethods.bekle();
-        Select select=new Select(us_22page.siralama);
+        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+        ReusableMethods.birAsagi(3);
+        ReusableMethods.bekle(5);
+         trd.tumunugor.click();
+        ReusableMethods.bekle(5);
+        Select select=new Select( trd.siralama);
         System.out.println(select.getFirstSelectedOption().getText());//index belirtmediğim halde ilk çıkan sıralama
                                                                      //(default) varsayılan sıralama oluyor
-        String expectedİlkSira="Varsayılan Sıralama";
-        String actuelİlkSira=select.getFirstSelectedOption().getText();
-        Assert.assertTrue(actuelİlkSira.equals(expectedİlkSira));
+        String expectedIlkSira="Varsayılan Sıralama";
+        String actuelIlkSira=select.getFirstSelectedOption().getText();
+        Assert.assertEquals(expectedIlkSira, actuelIlkSira);
 
         Driver.closeDriver();
 
@@ -45,26 +36,23 @@ public class US_22test {
 
     @Test
     public void testCase02() {
-        us_22page=new US_22page();
         //ReusableMethods.tradylinnGiris();
         Driver.getDriver().get("https://tradylinn.com/");
-        ReusableMethods.bekle();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.bekle();
-        us_22page.tümünügör.click();
-        ReusableMethods.bekle();
-        Select select=new Select(us_22page.siralama);
+        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+        ReusableMethods.birAsagi(3);
+        ReusableMethods.bekle(5);
+         trd.tumunugor.click();
+        ReusableMethods.bekle(5);
+        Select select=new Select( trd.siralama);
         select.selectByIndex(1);
         System.out.println(select.getFirstSelectedOption().getText());
-        ReusableMethods.bekle();
-        String expectedİlkSira="En çok incelenene göre sırala";
-        String actuelİlkSira=select.getFirstSelectedOption().getText();
-        Assert.assertTrue(actuelİlkSira.equals(expectedİlkSira));
+        ReusableMethods.bekle(5);
+        String expectedIlkSira="En çok incelenene göre sırala";
+        String actuelIlkSira=select.getFirstSelectedOption().getText();
+        Assert.assertEquals(expectedIlkSira, actuelIlkSira);
 
         Driver.closeDriver();
 
@@ -72,26 +60,23 @@ public class US_22test {
 
     @Test
     public void testCase03() {
-        us_22page=new US_22page();
         //ReusableMethods.tradylinnGiris();
         Driver.getDriver().get("https://tradylinn.com/");
-        ReusableMethods.bekle();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.bekle();
-        us_22page.tümünügör.click();
-        ReusableMethods.bekle();
-        Select select=new Select(us_22page.siralama);
+        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+        ReusableMethods.birAsagi(3);
+        ReusableMethods.bekle(5);
+         trd.tumunugor.click();
+        ReusableMethods.bekle(5);
+        Select select=new Select( trd.siralama);
         select.selectByIndex(2);
         System.out.println(select.getFirstSelectedOption().getText());
-        ReusableMethods.bekle();
-        String expectedİlkSira="En çok oy alana göre sırala";
-        String actuelİlkSira=select.getFirstSelectedOption().getText();
-        Assert.assertTrue(actuelİlkSira.equals(expectedİlkSira));
+        ReusableMethods.bekle(5);
+        String expectedIlkSira="En çok oy alana göre sırala";
+        String actuelIlkSira=select.getFirstSelectedOption().getText();
+        Assert.assertEquals(expectedIlkSira, actuelIlkSira);
 
         Driver.closeDriver();
 
@@ -100,26 +85,23 @@ public class US_22test {
 
     @Test
     public void testCase04() {
-        us_22page=new US_22page();
        // ReusableMethods.tradylinnGiris();
         Driver.getDriver().get("https://tradylinn.com/");
-        ReusableMethods.bekle();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.bekle();
-        us_22page.tümünügör.click();
-        ReusableMethods.bekle();
-        Select select=new Select(us_22page.siralama);
+        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+        ReusableMethods.birAsagi(3);
+        ReusableMethods.bekle(5);
+         trd.tumunugor.click();
+        ReusableMethods.bekle(5);
+        Select select=new Select( trd.siralama);
         select.selectByIndex(3);
         System.out.println(select.getFirstSelectedOption().getText());
-        ReusableMethods.bekle();
-        String expectedİlkSira="En yeniye göre sırala";
-        String actuelİlkSira=select.getFirstSelectedOption().getText();
-        Assert.assertTrue(actuelİlkSira.equals(expectedİlkSira));
+        ReusableMethods.bekle(5);
+        String expectedIlkSira="En yeniye göre sırala";
+        String actuelIlkSira=select.getFirstSelectedOption().getText();
+        Assert.assertEquals(expectedIlkSira, actuelIlkSira);
 
         Driver.closeDriver();
 
@@ -127,55 +109,37 @@ public class US_22test {
 
     @Test
     public void testCase05() {
-        us_22page=new US_22page();
         // ReusableMethods.tradylinnGiris();
         Driver.getDriver().get("https://tradylinn.com/");
-        ReusableMethods.bekle();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.bekle();
-        us_22page.tümünügör.click();
-        ReusableMethods.bekle();
-        Select select=new Select(us_22page.siralama);
+        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+        ReusableMethods.birAsagi(3);
+        ReusableMethods.bekle(5);
+         trd.tumunugor.click();
+        ReusableMethods.bekle(5);
+        Select select=new Select( trd.siralama);
         select.selectByIndex(4);
         System.out.println(select.getFirstSelectedOption().getText());
-        ReusableMethods.bekle();
-        ReusableMethods.bekle();
-        ReusableMethods.bekle();
-        String expectedİlkSıradakiFiyat="Masa";
-        String actuelİlkSiradakiFiyat=us_22page.enUcuz.getText();
-        System.out.println(actuelİlkSiradakiFiyat);
-        Assert.assertTrue(actuelİlkSiradakiFiyat.equals(expectedİlkSıradakiFiyat));
+        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(5);
+        String expectedIlkSiradakiFiyat="Masa";
+        String actuelIlkSiradakiFiyat= trd.enUcuz.getText();
+        System.out.println(actuelIlkSiradakiFiyat);
+        Assert.assertEquals(expectedIlkSiradakiFiyat, actuelIlkSiradakiFiyat);
 
 
         String expectedonikinci="19.00₺";
-        String actuelonİkinci=us_22page.onİkinci.getText();
-        System.out.println(actuelonİkinci);
-        Assert.assertTrue(actuelonİkinci.equals(expectedonikinci));
+        String actuelonIkinci= trd.onIkinci.getText();
+        System.out.println(actuelonIkinci);
+        Assert.assertEquals(expectedonikinci, actuelonIkinci);
 
 
-        String expectedİlkSira="Fiyata göre sırala: Düşükten yükseğe";
-        String actuelİlkSira=select.getFirstSelectedOption().getText();
-        Assert.assertTrue(actuelİlkSira.equals(expectedİlkSira));
-
-       /* ArrayList<Double> urunlerDouble = new ArrayList<>();
-
-        for (WebElement each: us_22page.fiyatlar){
-            // String fiyatStr = each.getText().replaceAll("$", "");
-            String fiyatStr = each.getText().replaceAll("^\\D", "");
-            urunlerDouble.add(Double.parseDouble(fiyatStr));
-        }
-
-        ArrayList<Double> kontrolListe = new ArrayList<>(urunlerDouble);
-        Collections.sort(kontrolListe);
-
-        Assert.assertEquals(kontrolListe,urunlerDouble);
-
-        */
+        String expectedIlkSira="Fiyata göre sırala: Düşükten yükseğe";
+        String actuelIlkSira=select.getFirstSelectedOption().getText();
+        Assert.assertEquals(expectedIlkSira, actuelIlkSira);
 
 
         Driver.closeDriver();
@@ -183,48 +147,30 @@ public class US_22test {
 
     @Test
     public void testCase06() {
-        us_22page=new US_22page();
         // ReusableMethods.tradylinnGiris();
         Driver.getDriver().get("https://tradylinn.com/");
-        ReusableMethods.bekle();
-        ReusableMethods.bekle();
-        ReusableMethods.sayfaAltı();
-        ReusableMethods.bekle();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-        ReusableMethods.bekle();
-        us_22page.tümünügör.click();
-        ReusableMethods.bekle();
-        Select select=new Select(us_22page.siralama);
+        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(5);
+        ReusableMethods.sayfaAlti();
+        ReusableMethods.bekle(5);
+        ReusableMethods.birAsagi(3);
+        ReusableMethods.bekle(5);
+         trd.tumunugor.click();
+        ReusableMethods.bekle(5);
+        Select select=new Select( trd.siralama);
         select.selectByIndex(5);
         System.out.println(select.getFirstSelectedOption().getText());
-        ReusableMethods.bekle();
-        ReusableMethods.bekle();
+        ReusableMethods.bekle(5);
+        ReusableMethods.bekle(5);
 
         String expectedEnpahali="9,999.00₺";
-        String actuelEnPahali=us_22page.enPahali.getText();
+        String actuelEnPahali= trd.enPahali.getText();
         System.out.println(actuelEnPahali);
-        Assert.assertTrue(actuelEnPahali.equals(expectedEnpahali));
+        Assert.assertEquals(expectedEnpahali, actuelEnPahali);
 
-        String expectedİlkSira="Fiyata göre sırala: Yüksekten düşüğe";
-        String actuelİlkSira=select.getFirstSelectedOption().getText();
-        Assert.assertTrue(actuelİlkSira.equals(expectedİlkSira));
-         /* ArrayList<Double> urunlerDouble = new ArrayList<>();
-
-        for (WebElement each: us_22page.fiyatlar){
-            // String fiyatStr = each.getText().replaceAll("$", "");
-            String fiyatStr = each.getText().replaceAll("^\\D", "");
-            urunlerDouble.add(Double.parseDouble(fiyatStr));
-        }
-
-        ArrayList<Double> kontrolListe = new ArrayList<>(urunlerDouble);
-        Collections.sort(kontrolListe);
-
-        Assert.assertEquals(kontrolListe,urunlerDouble);
-
-        */
-
+        String expectedIlkSira="Fiyata göre sırala: Yüksekten düşüğe";
+        String actuelIlkSira=select.getFirstSelectedOption().getText();
+        Assert.assertEquals(expectedIlkSira, actuelIlkSira);
 
         Driver.closeDriver();
     }

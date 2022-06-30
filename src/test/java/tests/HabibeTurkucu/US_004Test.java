@@ -1,13 +1,11 @@
 package tests.HabibeTurkucu;
-
-import org.asynchttpclient.request.body.generator.ReactiveStreamsBodyGenerator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.HabibeTurkucu.US_004Page;
+import pages.TradylinnPage;
+ 
 import utilities.Driver;
 import utilities.ReusableMethods;
 
@@ -16,9 +14,10 @@ import java.util.Random;
 
 public class US_004Test {
 
-    US_004Page us_004Page= new US_004Page();
+    TradylinnPage trd =new TradylinnPage();
 
-    public void alisverisSayfası() {
+
+    public void alisverisSayfasi() {
         ReusableMethods.tradylinnHesabim();
         WebElement element = Driver.getDriver().findElement(By.xpath("(//*[@href='https://tradylinn.com/my-account-2/orders/'])[1]"));
         JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
@@ -33,43 +32,43 @@ public class US_004Test {
     @Test
     public void sepetteUrunlerGoruntulenir(){
        ReusableMethods.tradylinnHesabim();
-       us_004Page.urun1.click();
-       us_004Page.sepeteEkleButton.click();
-       us_004Page.sepetim.click();
-       Assert.assertTrue(us_004Page.sepetTablo.isDisplayed());
+        trd.urun1.click();
+        trd.sepeteEkleButton.click();
+        trd.sepetim.click();
+       Assert.assertTrue( trd.sepetTablo.isDisplayed());
     }
 
     @Test
-    public void urunSayisiArtırmaAzaltma(){
+    public void urunSayisiArtirmaAzaltma(){
        ReusableMethods.tradylinnHesabim();
-        us_004Page.urun1.click();
-        us_004Page.sepeteEkleButton.click();
-       us_004Page.sepetim.click();
-       us_004Page.sepetiGoruntule.click();
-       us_004Page.urunArtırma.click();
+         trd.urun1.click();
+         trd.sepeteEkleButton.click();
+        trd.sepetim.click();
+        trd.sepetiGoruntule.click();
+        trd.urunArtirma.click();
        String urunSayisi= Driver.getDriver().findElement(By.xpath("//input[@type='number']")).getText();
        int urunAdedi=Integer.parseInt(urunSayisi);
        Assert.assertTrue(Boolean.parseBoolean(urunSayisi+1));
-       us_004Page.urunAzaltma.click();
+        trd.urunAzaltma.click();
        Assert.assertTrue(Boolean.parseBoolean(String.valueOf(urunAdedi-1)));
 
     }
     @Test
     public void clearCartileSepetiBosalt() throws InterruptedException {
         ReusableMethods.tradylinnGiris();
-        us_004Page.urun1.click();
-        us_004Page.sepeteEkleButton.click();
-        us_004Page.sepetim.click();
-        us_004Page.sepetiGoruntule.click();
-        us_004Page.temizleButton.click();
+         trd.urun1.click();
+         trd.sepeteEkleButton.click();
+         trd.sepetim.click();
+         trd.sepetiGoruntule.click();
+         trd.temizleButton.click();
         Thread.sleep(4000);
-        Assert.assertTrue(us_004Page.sepetBosYazisi.isDisplayed());
+        Assert.assertTrue( trd.sepetBosYazisi.isDisplayed());
     }
 
     @Test
     public void cupponSecenegiOlmali(){
         ReusableMethods.tradylinnGiris();
-        alisverisSayfası();
+        alisverisSayfasi();
 
         List<WebElement> urunlerList = Driver.getDriver().findElements(By.xpath("(//*[@class='product-wrap'])"));
         int urunSayisi = urunlerList.size();
@@ -86,58 +85,57 @@ public class US_004Test {
             executor.executeScript("arguments[0].click();", urnElemnt);
             executor.executeScript("arguments[0].click();", urnElemnt);
             urnElemnt.click();
-            ReusableMethods.bekle();
-            if (us_004Page.sepeteEkleButton.isDisplayed()) {
-                us_004Page.sepeteEkleButton.click();
+            ReusableMethods.bekle(5);
+            if ( trd.sepeteEkleButton.isDisplayed()) {
+                 trd.sepeteEkleButton.click();
                 urunlerList.add(urnElemnt);
             }
             Driver.getDriver().navigate().back();
         }
-        us_004Page.sepetim.click();
-        us_004Page.sepetiGoruntule.click();
-        ReusableMethods.birAsagi();
-        ReusableMethods.birAsagi();
-      Assert.assertTrue(us_004Page.kuponButton.isDisplayed());
-      us_004Page.kuponGir.sendKeys("123");
-      us_004Page.kuponButton.click();
+         trd.sepetim.click();
+         trd.sepetiGoruntule.click();
+        ReusableMethods.birAsagi(2);
+      Assert.assertTrue( trd.kuponButton.isDisplayed());
+       trd.kuponGir.sendKeys("123");
+       trd.kuponButton.click();
     }
 
     @Test
     public void alisveriseDevamEt(){
         ReusableMethods.tradylinnHesabim();
-        alisverisSayfası();
-        us_004Page.urun1.click();
-        us_004Page.sepeteEkleButton.click();
-        us_004Page.sepetim.click();
-        us_004Page.sepetiGoruntule.click();
-        us_004Page.alisveriseDevamet.click();
-        Assert.assertTrue(us_004Page.varsayılanSıralama.isDisplayed());
+        alisverisSayfasi();
+         trd.urun1.click();
+         trd.sepeteEkleButton.click();
+         trd.sepetim.click();
+         trd.sepetiGoruntule.click();
+         trd.alisveriseDevamet.click();
+
     }
 
     @Test
     public void kargoBilgileri(){
         ReusableMethods.tradylinnHesabim();
-        alisverisSayfası();
-        us_004Page.urun1.click();
-        us_004Page.sepeteEkleButton.click();
-        us_004Page.sepetim.click();
-        us_004Page.sepetiGoruntule.click();
-        ReusableMethods.bekle();
-        Assert.assertTrue(us_004Page.kargoBilgileri.isDisplayed());
-        Assert.assertTrue(us_004Page.sepetToplamiYazisi.isDisplayed());
+        alisverisSayfasi();
+         trd.urun1.click();
+         trd.sepeteEkleButton.click();
+         trd.sepetim.click();
+         trd.sepetiGoruntule.click();
+        ReusableMethods.bekle(5);
+        Assert.assertTrue( trd.kargoBilgileri.isDisplayed());
+        Assert.assertTrue( trd.sepetToplamiYazisi.isDisplayed());
     }
 
     @Test
     public void odemeSayfasi(){
         ReusableMethods.tradylinnHesabim();
         ReusableMethods.tradylinnHesabim();
-        alisverisSayfası();
-        us_004Page.urun1.click();
-        us_004Page.sepeteEkleButton.click();
-        us_004Page.sepetim.click();
-        us_004Page.sepetiGoruntule.click();
-        us_004Page.checkOut.click();
-        Assert.assertTrue(us_004Page.faturaTablosu.isDisplayed());
+        alisverisSayfasi();
+         trd.urun1.click();
+         trd.sepeteEkleButton.click();
+         trd.sepetim.click();
+         trd.sepetiGoruntule.click();
+         trd.checkOut.click();
+        Assert.assertTrue( trd.faturaTablosu.isDisplayed());
 
     }
 }

@@ -10,8 +10,8 @@ import org.openqa.selenium.safari.SafariDriver;
 public class CrossDriver {
     private  CrossDriver(){
     }
-    static WebDriver driver;
-    public static WebDriver getDriver(String browser){
+      WebDriver driver;
+    public   WebDriver getDriver(String browser){
         browser = (browser == null) ? ConfigReader.getProperty("browser") : browser;
         if (driver==null) {
             switch (browser) {
@@ -40,7 +40,7 @@ public class CrossDriver {
         }
         return driver;
     }
-    public static void closeDriver(){
+    public   void closeDriver(){
         if (driver!=null){ // driver'a deger atanmissa
             driver.close();
             driver=null;

@@ -4,7 +4,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-import pages.EmreKarasu.US_08_09_10_Page;
+import pages.TradylinnPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
@@ -12,32 +12,33 @@ import java.util.List;
 
 
 public class US_010Test {
-    US_08_09_10_Page page = new US_08_09_10_Page();
+    TradylinnPage trd =new TradylinnPage();
+
     @Test
     public void TC_001_ve_TC_002() throws InterruptedException {
 
                         //TC_001
         ReusableMethods.tradylinnStoreManager();
-        ReusableMethods.bekle();
+        ReusableMethods.bekle(5);
 
         JavascriptExecutor js1 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
         js1.executeScript("window.scrollBy(0,250)");
-        page.urun.click();
-        page.urun.clear();
+        trd.urun.click();
+        trd.urun.clear();
         Thread.sleep(5000);
 
-        page.yeniEkle.click();
+        trd.yeniEkle.click();
         Thread.sleep(5000);
 
         JavascriptExecutor js2 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
         js2.executeScript("window.scrollBy(0,1100)");
-        page.attributes.click();
+        trd.attributes.click();
         Thread.sleep(3000);
 
-        page.attributes_Color.click();
+        trd.attributes_Color.click();
         Thread.sleep(3000);
 
-        Select select1=new Select(page.ddColor);
+        Select select1=new Select(trd.ddColor);
         List<WebElement> colors=select1.getOptions();
         for (WebElement each:colors
              ) {
@@ -47,10 +48,10 @@ public class US_010Test {
 
 
                         //TC_002
-        page.attributes_Size.click();
+        trd.attributes_Size.click();
         Thread.sleep(2000);
 
-        Select select2 =new Select(page.ddSize);
+        Select select2 =new Select(trd.ddSize);
         List<WebElement> size= select2.getOptions();
             for (WebElement each2:size) {
                 each.click();

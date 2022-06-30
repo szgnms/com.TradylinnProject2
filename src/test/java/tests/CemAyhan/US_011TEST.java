@@ -3,13 +3,13 @@ package tests.CemAyhan;
 import org.openqa.selenium.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.CemAyhan.TradylinnPage;
+import pages.TradylinnPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
 public class US_011TEST {
 
-    TradylinnPage tradylinnPage=new TradylinnPage();
+     TradylinnPage trd = new TradylinnPage();
 
     @Test
 
@@ -19,30 +19,30 @@ public class US_011TEST {
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl")); //urlye git
 
         //2.Adım
-        tradylinnPage.uyeOlButonu.click(); //uye ola tıkla
+        trd.uyeOlButonu.click(); //uye ola tıkla
         Thread.sleep(2000);
 
         //3.Adım
-        tradylinnPage.becomeWendorButonu.click(); //satıcı ol a tıkla
+        trd.becomeWendorButonu.click(); //satıcı ol a tıkla
 
         //4.Adım
-        Assert.assertTrue(tradylinnPage.wendorRegistrationYazisi.isDisplayed()); //wendorRegistration gorunur oldugunu dogrula
+        Assert.assertTrue(trd.wendorRegistrationYazisi.isDisplayed()); //wendorRegistration gorunur oldugunu dogrula
         Thread.sleep(2000);
 
         //5.Adım
-        tradylinnPage.hesabimButonu.click(); //hesabım butonuna tıklanır
+        trd.hesabimButonu.click(); //hesabım butonuna tıklanır
 
         JavascriptExecutor js = (JavascriptExecutor)Driver.getDriver(); //sayfayı asagı kaydır
         js.executeScript("window.scrollBy(0,300)");
 
         //6.Adım
-        tradylinnPage.hesabimEmailsekmesi.sendKeys(ConfigReader.getProperty("tradEmail"));
-        tradylinnPage.passwordSekmesi.sendKeys(ConfigReader.getProperty("tradPass"));
-        tradylinnPage.hesabimGirisButonu.click(); //mail ve parola gir girise tıkla
+        trd.hesabimEmailsekmesi.sendKeys(ConfigReader.getProperty("tradEmail"));
+        trd.passwordSekmesi.sendKeys(ConfigReader.getProperty("tradPass"));
+        trd.hesabimGirisButonu.click(); //mail ve parola gir girise tıkla
         Thread.sleep(2000);
 
         //7.Adım
-        tradylinnPage.storeManagerButonu.click(); //store managera tıkla
+        trd.storeManagerButonu.click(); //store managera tıkla
         Thread.sleep(2000);
 
         JavascriptExecutor js1 = (JavascriptExecutor)Driver.getDriver(); //sayfayı asagı kaydır
@@ -50,14 +50,14 @@ public class US_011TEST {
         Thread.sleep(2000);
 
         //8.Adım
-        tradylinnPage.urunSekmesi.click(); //urun sekmesine tıkla
+        trd.urunSekmesi.click(); //urun sekmesine tıkla
         Thread.sleep(2000);
 
         JavascriptExecutor js2 = (JavascriptExecutor)Driver.getDriver(); //sayfayı asagı kaydır
         js2.executeScript("window.scrollBy(0,500)");
 
         //9.Adım
-        tradylinnPage.yeniUrunEkleButonu.click(); //yeni ürün ekleye tıkla
+        trd.yeniUrunEkleButonu.click(); //yeni ürün ekleye tıkla
         Thread.sleep(2000);
 
         JavascriptExecutor js3 = (JavascriptExecutor)Driver.getDriver(); //sayfayı asagı kaydır
@@ -65,11 +65,11 @@ public class US_011TEST {
         Thread.sleep(2000);
 
         //10.Adım
-        tradylinnPage.toptanUrunGostermeSekmesi.click(); //toptanurungostermeye tıkla
+        trd.toptanUrunGostermeSekmesi.click(); //toptanurungostermeye tıkla
         Thread.sleep(2000);
 
         //11.Adım
-        tradylinnPage.pieceTypeButonu.sendKeys("Piece"); //Piece yi seç
+        trd.pieceTypeButonu.sendKeys("Piece"); //Piece yi seç
         Thread.sleep(2000);
 
 
@@ -86,30 +86,30 @@ public class US_011TEST {
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl")); //urlye git
 
         //2.Adım
-        tradylinnPage.uyeOlButonu.click(); //uye ola tıkla
+        trd.uyeOlButonu.click(); //uye ola tıkla
         Thread.sleep(2000);
 
         //3.Adım
-        tradylinnPage.becomeWendorButonu.click(); //satıcı ol a tıkla
+        trd.becomeWendorButonu.click(); //satıcı ol a tıkla
 
         //4.Adım
-        Assert.assertTrue(tradylinnPage.wendorRegistrationYazisi.isDisplayed()); //wendorRegistration gorunur oldugunu dogrula
+        Assert.assertTrue(trd.wendorRegistrationYazisi.isDisplayed()); //wendorRegistration gorunur oldugunu dogrula
         Thread.sleep(2000);
 
         //5.Adım
-        tradylinnPage.hesabimButonu.click(); //hesabım butonuna tıklanır
+        trd.hesabimButonu.click(); //hesabım butonuna tıklanır
 
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
         js.executeScript("window.scrollBy(0,300)");
 
         //6.Adım
-        tradylinnPage.hesabimEmailsekmesi.sendKeys(ConfigReader.getProperty("tradEmail"));
-        tradylinnPage.passwordSekmesi.sendKeys(ConfigReader.getProperty("tradPass"));
-        tradylinnPage.hesabimGirisButonu.click(); //mail ve parola gir girise tıkla
+        trd.hesabimEmailsekmesi.sendKeys(ConfigReader.getProperty("tradEmail"));
+        trd.passwordSekmesi.sendKeys(ConfigReader.getProperty("tradPass"));
+        trd.hesabimGirisButonu.click(); //mail ve parola gir girise tıkla
         Thread.sleep(2000);
 
         //7.Adım
-        tradylinnPage.storeManagerButonu.click(); //store managera tıkla
+        trd.storeManagerButonu.click(); //store managera tıkla
         Thread.sleep(2000);
 
         JavascriptExecutor js1 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
@@ -117,14 +117,14 @@ public class US_011TEST {
         Thread.sleep(2000);
 
         //8.Adım
-        tradylinnPage.urunSekmesi.click(); //urun sekmesine tıkla
+        trd.urunSekmesi.click(); //urun sekmesine tıkla
         Thread.sleep(2000);
 
         JavascriptExecutor js2 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
         js2.executeScript("window.scrollBy(0,500)");
 
         //9.Adım
-        tradylinnPage.yeniUrunEkleButonu.click(); //yeni ürün ekleye tıkla
+        trd.yeniUrunEkleButonu.click(); //yeni ürün ekleye tıkla
         Thread.sleep(2000);
 
         JavascriptExecutor js3 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
@@ -132,13 +132,13 @@ public class US_011TEST {
         Thread.sleep(2000);
 
         //10.Adım
-        tradylinnPage.toptanUrunGostermeSekmesi.click(); //toptanurungostermeye tıkla
+        trd.toptanUrunGostermeSekmesi.click(); //toptanurungostermeye tıkla
         Thread.sleep(2000);
 
         //11.Adım
-        tradylinnPage.unitsPerPieceSekmesi.clear();
+        trd.unitsPerPieceSekmesi.clear();
         Thread.sleep(2000);
-        tradylinnPage.unitsPerPieceSekmesi.sendKeys("5");
+        trd.unitsPerPieceSekmesi.sendKeys("5");
         Thread.sleep(2000);
 
         Driver.closeDriver();
@@ -155,30 +155,30 @@ public class US_011TEST {
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl")); //urlye git
 
         //2.Adım
-        tradylinnPage.uyeOlButonu.click(); //uye ola tıkla
+        trd.uyeOlButonu.click(); //uye ola tıkla
         Thread.sleep(2000);
 
         //3.Adım
-        tradylinnPage.becomeWendorButonu.click(); //satıcı ol a tıkla
+        trd.becomeWendorButonu.click(); //satıcı ol a tıkla
 
         //4.Adım
-        Assert.assertTrue(tradylinnPage.wendorRegistrationYazisi.isDisplayed()); //wendorRegistration gorunur oldugunu dogrula
+        Assert.assertTrue(trd.wendorRegistrationYazisi.isDisplayed()); //wendorRegistration gorunur oldugunu dogrula
         Thread.sleep(2000);
 
         //5.Adım
-        tradylinnPage.hesabimButonu.click(); //hesabım butonuna tıklanır
+        trd.hesabimButonu.click(); //hesabım butonuna tıklanır
 
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
         js.executeScript("window.scrollBy(0,300)");
 
         //6.Adım
-        tradylinnPage.hesabimEmailsekmesi.sendKeys(ConfigReader.getProperty("tradEmail"));
-        tradylinnPage.passwordSekmesi.sendKeys(ConfigReader.getProperty("tradPass"));
-        tradylinnPage.hesabimGirisButonu.click(); //mail ve parola gir girise tıkla
+        trd.hesabimEmailsekmesi.sendKeys(ConfigReader.getProperty("tradEmail"));
+        trd.passwordSekmesi.sendKeys(ConfigReader.getProperty("tradPass"));
+        trd.hesabimGirisButonu.click(); //mail ve parola gir girise tıkla
         Thread.sleep(2000);
 
         //7.Adım
-        tradylinnPage.storeManagerButonu.click(); //store managera tıkla
+        trd.storeManagerButonu.click(); //store managera tıkla
         Thread.sleep(2000);
 
         JavascriptExecutor js1 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
@@ -186,14 +186,14 @@ public class US_011TEST {
         Thread.sleep(2000);
 
         //8.Adım
-        tradylinnPage.urunSekmesi.click(); //urun sekmesine tıkla
+        trd.urunSekmesi.click(); //urun sekmesine tıkla
         Thread.sleep(2000);
 
         JavascriptExecutor js2 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
         js2.executeScript("window.scrollBy(0,500)");
 
         //9.Adım
-        tradylinnPage.yeniUrunEkleButonu.click(); //yeni ürün ekleye tıkla
+        trd.yeniUrunEkleButonu.click(); //yeni ürün ekleye tıkla
         Thread.sleep(2000);
 
         JavascriptExecutor js3 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
@@ -201,13 +201,13 @@ public class US_011TEST {
         Thread.sleep(2000);
 
         //10.Adım
-        tradylinnPage.toptanUrunGostermeSekmesi.click(); //toptanurungostermeye tıkla
+        trd.toptanUrunGostermeSekmesi.click(); //toptanurungostermeye tıkla
         Thread.sleep(2000);
 
         //11.Adım
-        tradylinnPage.minOrderQuantitySekmesi.clear();
+        trd.minOrderQuantitySekmesi.clear();
         Thread.sleep(2000);
-        tradylinnPage.minOrderQuantitySekmesi.sendKeys("2");
+        trd.minOrderQuantitySekmesi.sendKeys("2");
         Thread.sleep(2000);
 
         Driver.closeDriver();

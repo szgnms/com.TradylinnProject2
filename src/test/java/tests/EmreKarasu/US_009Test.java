@@ -4,48 +4,49 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.Test;
-import pages.EmreKarasu.US_08_09_10_Page;
+import pages.TradylinnPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
 import java.util.List;
 
 public class US_009Test extends Driver {
-    US_08_09_10_Page page = new US_08_09_10_Page();
+    TradylinnPage trd =new TradylinnPage();
+
 
     @Test
     public void TC_001_ve_TC_002() throws InterruptedException {
                         //TC_001
         ReusableMethods.tradylinnStoreManager();
-        ReusableMethods.bekle();
+        ReusableMethods.bekle(5);
 
         JavascriptExecutor js1 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
         js1.executeScript("window.scrollBy(0,250)");
-        page.urun.click();
+        trd.urun.click();
         Thread.sleep(5000);
 
-        page.yeniEkle.click();
+        trd.yeniEkle.click();
         Thread.sleep(5000);
 
         JavascriptExecutor js2 = (JavascriptExecutor) Driver.getDriver(); //sayfayı asagı kaydır
         js2.executeScript("window.scrollBy(0,1100)");
-        page.shipping.click();
+        trd.shipping.click();
         Thread.sleep(2000);
 
-        page.weight.click();
-        page.weight.sendKeys("10");
+        trd.weight.click();
+        trd.weight.sendKeys("10");
 
-        page.length.click();
-        page.length.sendKeys("15");
+        trd.length.click();
+        trd.length.sendKeys("15");
 
-        page.width.click();
-        page.width.sendKeys("20");
+        trd.width.click();
+        trd.width.sendKeys("20");
 
-        page.height.click();
-        page.height.sendKeys("25");
+        trd.height.click();
+        trd.height.sendKeys("25");
 
                         //TC_002
-        Select select = new Select(page.ddPTime);
+        Select select = new Select(trd.ddPTime);
         List<WebElement> processingTime = select.getOptions();
         for (WebElement each : processingTime
         ) {
