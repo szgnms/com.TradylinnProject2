@@ -20,7 +20,7 @@ public class US_002test extends TestBaseRapor {
         ReusableMethods.tradylinnGiris();
        // sf.assertTrue( trd.bannerText.isDisplayed());
         //sf.assertAll();
-        Driver.getDriver();
+
     }
 
     @Test (groups = "end2end")
