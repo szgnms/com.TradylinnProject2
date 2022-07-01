@@ -4493,3 +4493,751 @@ java.net.SocketException: Connection reset
 2022-07-01 07:49:44 INFO  Utils:112 - [TestNG] Running:
   C:\Users\ms\AppData\Local\JetBrains\IdeaIC2022.1\temp-testng-customsuite.xml
 
+2022-07-01 15:01:21 INFO  Utils:112 - [TestRunner] Running the tests in 'negatifSmokeTest' with parallel mode:none
+2022-07-01 15:01:21 INFO  Utils:112 - [RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@647fd8ce priority: 10
+2022-07-01 15:01:22 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_001test]
+2022-07-01 15:01:24 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-07-01 15:01:24 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 182 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_002test]
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 21 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 15 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:01:53 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ms\Documents\GitHub\com.TradylinnProject\src\negatifSmokeTest.xml
+
+2022-07-01 15:01:53 INFO  Utils:112 - [SuiteRunner] Created 1 TestRunners
+2022-07-01 15:01:53 INFO  Utils:112 - [TestRunner] Running test negatifSmokeTest on 2  classes,  included groups:[negatifSmokeTest] excluded groups:[]
+2022-07-01 15:01:53 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_001test
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_001test.emptyEmail()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_001test.validEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_001test.registertrdControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_001test.strongPassControl1()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_001test.becomeVendor()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_001test.strongPassControl2()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_001test.strongPassControl3()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_001test.verifyMail()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_001test.strongPassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_001test.PassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_001test.uniqueEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:53 INFO  TestClass:112 - ======
+2022-07-01 15:01:53 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_002test
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_002test.vendorLogin()[pri:0, instance:tests.MuhammedSezgin.US_002test@6a9b9909]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_002test.linkControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@6a9b9909]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_002test.purchase()[pri:0, instance:tests.MuhammedSezgin.US_002test@6a9b9909]
+2022-07-01 15:01:53 INFO  TestClass:112 -     @Test US_002test.dashboardControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@6a9b9909]
+2022-07-01 15:01:53 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_002test@6a9b9909]
+2022-07-01 15:01:53 INFO  TestClass:112 - ======
+2022-07-01 15:01:53 INFO  Utils:112 - [Invoker 303563356] Invoking @BeforeTest TestBaseRapor.setUpTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:01:55 INFO  Utils:112 - [Utils] DynamicGraphHelper.createDynamicGraph() took 41 ms.
+2022-07-01 15:01:55 INFO  Utils:112 - [Invoker 303563356] Invoking tests.MuhammedSezgin.US_001test.validEmailControl
+2022-07-01 15:02:39 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:02:40 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterTest TestBaseRapor.tearDownTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@53a9fcfd]
+2022-07-01 15:02:40 INFO  Utils:112 - [TestNG] Time taken by org.testng.internal.ExitCodeListener@71b6172c: 0 ms
+2022-07-01 15:28:32 INFO  Utils:112 - [TestRunner] Running the tests in 'smoketests' with parallel mode:none
+2022-07-01 15:28:32 INFO  Utils:112 - [RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@7995092a priority: 10
+2022-07-01 15:28:32 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_001test]
+2022-07-01 15:28:33 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-07-01 15:28:33 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 16 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_002test]
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.SeckinKaraca.US_21test]
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.SeckinKaraca.US_22test]
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 3 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 17 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:28:40 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ms\Documents\GitHub\com.TradylinnProject\src\smokeTest.xml
+
+2022-07-01 15:28:40 INFO  Utils:112 - [SuiteRunner] Created 1 TestRunners
+2022-07-01 15:28:40 INFO  Utils:112 - [TestRunner] Running test smoketests on 4  classes,  included groups:[smoketests] excluded groups:[]
+2022-07-01 15:28:40 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_001test
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_001test.emptyEmail()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_001test.validEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_001test.registertrdControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_001test.strongPassControl1()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_001test.becomeVendor()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_001test.strongPassControl2()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_001test.strongPassControl3()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_001test.verifyMail()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_001test.strongPassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_001test.PassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_001test.uniqueEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:40 INFO  TestClass:112 - ======
+2022-07-01 15:28:40 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_002test
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_002test.vendorLogin()[pri:0, instance:tests.MuhammedSezgin.US_002test@35fb22a9]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_002test.linkControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@35fb22a9]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_002test.purchase()[pri:0, instance:tests.MuhammedSezgin.US_002test@35fb22a9]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_002test.dashboardControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@35fb22a9]
+2022-07-01 15:28:40 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_002test@35fb22a9]
+2022-07-01 15:28:40 INFO  TestClass:112 - ======
+2022-07-01 15:28:40 INFO  TestClass:112 - ===== Test class
+tests.SeckinKaraca.US_21test
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_21test.testCase01()[pri:0, instance:tests.SeckinKaraca.US_21test@6c8909c3]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_21test.testCase04()[pri:0, instance:tests.SeckinKaraca.US_21test@6c8909c3]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_21test.testCase05()[pri:0, instance:tests.SeckinKaraca.US_21test@6c8909c3]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_21test.testCase02()[pri:0, instance:tests.SeckinKaraca.US_21test@6c8909c3]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_21test.testCace03()[pri:0, instance:tests.SeckinKaraca.US_21test@6c8909c3]
+2022-07-01 15:28:40 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.SeckinKaraca.US_21test@6c8909c3]
+2022-07-01 15:28:40 INFO  TestClass:112 - ======
+2022-07-01 15:28:40 INFO  TestClass:112 - ===== Test class
+tests.SeckinKaraca.US_22test
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_22test.testCase01()[pri:0, instance:tests.SeckinKaraca.US_22test@1e008f36]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_22test.testCase04()[pri:0, instance:tests.SeckinKaraca.US_22test@1e008f36]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_22test.testCase05()[pri:0, instance:tests.SeckinKaraca.US_22test@1e008f36]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_22test.testCase02()[pri:0, instance:tests.SeckinKaraca.US_22test@1e008f36]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_22test.testCase03()[pri:0, instance:tests.SeckinKaraca.US_22test@1e008f36]
+2022-07-01 15:28:40 INFO  TestClass:112 -     @Test US_22test.testCase06()[pri:0, instance:tests.SeckinKaraca.US_22test@1e008f36]
+2022-07-01 15:28:40 INFO  TestClass:112 - ======
+2022-07-01 15:28:40 INFO  Utils:112 - [Invoker 303563356] Invoking @BeforeTest TestBaseRapor.setUpTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:28:41 INFO  Utils:112 - [Utils] DynamicGraphHelper.createDynamicGraph() took 11 ms.
+2022-07-01 15:28:41 INFO  Utils:112 - [Invoker 303563356] Invoking tests.SeckinKaraca.US_21test.testCase05
+2022-07-01 15:30:13 WARN  WebSocketHandler:142 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-07-01 15:30:13 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.SeckinKaraca.US_21test@6c8909c3]
+2022-07-01 15:30:13 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-07-01 15:30:13 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-07-01 15:30:16 INFO  Utils:112 - [Invoker 303563356] Invoking tests.MuhammedSezgin.US_002test.vendorLogin
+2022-07-01 15:30:37 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_002test@35fb22a9]
+2022-07-01 15:30:38 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterTest TestBaseRapor.tearDownTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@5782d777]
+2022-07-01 15:30:40 INFO  Utils:112 - [TestNG] Time taken by org.testng.internal.ExitCodeListener@60df7989: 0 ms
+2022-07-01 15:40:17 INFO  Utils:112 - [TestRunner] Running the tests in 'smoketests' with parallel mode:none
+2022-07-01 15:40:17 INFO  Utils:112 - [RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@161479c6 priority: 10
+2022-07-01 15:40:17 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_001test]
+2022-07-01 15:40:18 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-07-01 15:40:18 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 20 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_002test]
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.SeckinKaraca.US_21test]
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.SeckinKaraca.US_22test]
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 14 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 12 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ms\Documents\GitHub\com.TradylinnProject\src\smokeTest.xml
+
+2022-07-01 15:40:22 INFO  Utils:112 - [SuiteRunner] Created 1 TestRunners
+2022-07-01 15:40:22 INFO  Utils:112 - [TestRunner] Running test smoketests on 4  classes,  included groups:[smoketests] excluded groups:[]
+2022-07-01 15:40:22 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_001test
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_001test.emptyEmail()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_001test.validEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_001test.registertrdControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_001test.strongPassControl1()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_001test.becomeVendor()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_001test.strongPassControl2()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_001test.verifyMail()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_001test.strongPassControl3()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_001test.strongPassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_001test.PassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_001test.uniqueEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  TestClass:112 - ======
+2022-07-01 15:40:22 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_002test
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_002test.vendorLogin()[pri:0, instance:tests.MuhammedSezgin.US_002test@6f89292e]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_002test.linkControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@6f89292e]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_002test.purchase()[pri:0, instance:tests.MuhammedSezgin.US_002test@6f89292e]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_002test.dashboardControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@6f89292e]
+2022-07-01 15:40:22 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_002test@6f89292e]
+2022-07-01 15:40:22 INFO  TestClass:112 - ======
+2022-07-01 15:40:22 INFO  TestClass:112 - ===== Test class
+tests.SeckinKaraca.US_21test
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_21test.testCase01()[pri:0, instance:tests.SeckinKaraca.US_21test@20749d9]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_21test.testCase04()[pri:0, instance:tests.SeckinKaraca.US_21test@20749d9]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_21test.testCase05()[pri:0, instance:tests.SeckinKaraca.US_21test@20749d9]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_21test.testCase02()[pri:0, instance:tests.SeckinKaraca.US_21test@20749d9]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_21test.testCace03()[pri:0, instance:tests.SeckinKaraca.US_21test@20749d9]
+2022-07-01 15:40:22 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.SeckinKaraca.US_21test@20749d9]
+2022-07-01 15:40:22 INFO  TestClass:112 - ======
+2022-07-01 15:40:22 INFO  TestClass:112 - ===== Test class
+tests.SeckinKaraca.US_22test
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_22test.testCase01()[pri:0, instance:tests.SeckinKaraca.US_22test@de77232]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_22test.testCase04()[pri:0, instance:tests.SeckinKaraca.US_22test@de77232]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_22test.testCase05()[pri:0, instance:tests.SeckinKaraca.US_22test@de77232]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_22test.testCase02()[pri:0, instance:tests.SeckinKaraca.US_22test@de77232]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_22test.testCase03()[pri:0, instance:tests.SeckinKaraca.US_22test@de77232]
+2022-07-01 15:40:22 INFO  TestClass:112 -     @Test US_22test.testCase06()[pri:0, instance:tests.SeckinKaraca.US_22test@de77232]
+2022-07-01 15:40:22 INFO  TestClass:112 - ======
+2022-07-01 15:40:22 INFO  Utils:112 - [Invoker 303563356] Invoking @BeforeTest TestBaseRapor.setUpTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:40:22 INFO  Utils:112 - [Utils] DynamicGraphHelper.createDynamicGraph() took 5 ms.
+2022-07-01 15:40:22 INFO  Utils:112 - [Invoker 303563356] Invoking tests.SeckinKaraca.US_21test.testCase05
+2022-07-01 15:41:49 WARN  WebSocketHandler:142 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-07-01 15:41:49 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.SeckinKaraca.US_21test@20749d9]
+2022-07-01 15:41:49 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-07-01 15:41:49 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-07-01 15:41:52 INFO  Utils:112 - [Invoker 303563356] Invoking tests.MuhammedSezgin.US_002test.vendorLogin
+2022-07-01 15:42:07 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_002test@6f89292e]
+2022-07-01 15:42:08 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterTest TestBaseRapor.tearDownTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@3f93e4a8]
+2022-07-01 15:42:09 INFO  Utils:112 - [TestNG] Time taken by org.testng.internal.ExitCodeListener@23ed382c: 0 ms
+2022-07-01 15:44:40 INFO  Utils:112 - [TestRunner] Running the tests in 'negatifSmokeTest' with parallel mode:none
+2022-07-01 15:44:40 INFO  Utils:112 - [RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@4b5a5ed1 priority: 10
+2022-07-01 15:44:40 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_001test]
+2022-07-01 15:44:41 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-07-01 15:44:41 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-07-01 15:44:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2022-07-01 15:44:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 3 ms.
+2022-07-01 15:44:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 155 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_002test]
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 5 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ms\Documents\GitHub\com.TradylinnProject\src\negatifSmokeTest.xml
+
+2022-07-01 15:44:46 INFO  Utils:112 - [SuiteRunner] Created 1 TestRunners
+2022-07-01 15:44:46 INFO  Utils:112 - [TestRunner] Running test negatifSmokeTest on 2  classes,  included groups:[negatifSmokeTest] excluded groups:[]
+2022-07-01 15:44:46 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_001test
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_001test.emptyEmail()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_001test.validEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_001test.registertrdControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_001test.strongPassControl1()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_001test.becomeVendor()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_001test.strongPassControl2()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_001test.verifyMail()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_001test.strongPassControl3()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_001test.strongPassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_001test.PassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_001test.uniqueEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  TestClass:112 - ======
+2022-07-01 15:44:46 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_002test
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_002test.vendorLogin()[pri:0, instance:tests.MuhammedSezgin.US_002test@44841b43]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_002test.linkControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@44841b43]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_002test.purchase()[pri:0, instance:tests.MuhammedSezgin.US_002test@44841b43]
+2022-07-01 15:44:46 INFO  TestClass:112 -     @Test US_002test.dashboardControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@44841b43]
+2022-07-01 15:44:46 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_002test@44841b43]
+2022-07-01 15:44:46 INFO  TestClass:112 - ======
+2022-07-01 15:44:46 INFO  Utils:112 - [Invoker 303563356] Invoking @BeforeTest TestBaseRapor.setUpTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:44:46 INFO  Utils:112 - [Utils] DynamicGraphHelper.createDynamicGraph() took 17 ms.
+2022-07-01 15:44:46 INFO  Utils:112 - [Invoker 303563356] Invoking tests.MuhammedSezgin.US_001test.validEmailControl
+2022-07-01 15:45:15 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:45:15 WARN  WebSocketHandler:142 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-07-01 15:45:15 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterTest TestBaseRapor.tearDownTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@342726f1]
+2022-07-01 15:45:16 INFO  Utils:112 - [TestNG] Time taken by org.testng.internal.ExitCodeListener@203d1d93: 0 ms
+2022-07-01 15:47:10 INFO  Utils:112 - [TestRunner] Running the tests in 'negatifSmokeTest' with parallel mode:none
+2022-07-01 15:47:10 INFO  Utils:112 - [RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@161479c6 priority: 10
+2022-07-01 15:47:10 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_001test]
+2022-07-01 15:47:11 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-07-01 15:47:11 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 25 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_002test]
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 7 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 1 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ms\Documents\GitHub\com.TradylinnProject\src\negatifSmokeTest.xml
+
+2022-07-01 15:47:14 INFO  Utils:112 - [SuiteRunner] Created 1 TestRunners
+2022-07-01 15:47:14 INFO  Utils:112 - [TestRunner] Running test negatifSmokeTest on 2  classes,  included groups:[negatifSmokeTest] excluded groups:[]
+2022-07-01 15:47:14 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_001test
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_001test.emptyEmail()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_001test.validEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_001test.registertrdControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_001test.becomeVendor()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_001test.strongPassControl1()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_001test.strongPassControl2()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_001test.strongPassControl3()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_001test.verifyMail()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_001test.strongPassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_001test.PassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_001test.uniqueEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  TestClass:112 - ======
+2022-07-01 15:47:14 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_002test
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_002test.vendorLogin()[pri:0, instance:tests.MuhammedSezgin.US_002test@5445f5ba]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_002test.linkControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@5445f5ba]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_002test.purchase()[pri:0, instance:tests.MuhammedSezgin.US_002test@5445f5ba]
+2022-07-01 15:47:14 INFO  TestClass:112 -     @Test US_002test.dashboardControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@5445f5ba]
+2022-07-01 15:47:14 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_002test@5445f5ba]
+2022-07-01 15:47:14 INFO  TestClass:112 - ======
+2022-07-01 15:47:14 INFO  Utils:112 - [Invoker 303563356] Invoking @BeforeTest TestBaseRapor.setUpTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:14 INFO  Utils:112 - [Utils] DynamicGraphHelper.createDynamicGraph() took 9 ms.
+2022-07-01 15:47:14 INFO  Utils:112 - [Invoker 303563356] Invoking tests.MuhammedSezgin.US_001test.validEmailControl
+2022-07-01 15:47:31 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:31 WARN  WebSocketHandler:142 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-07-01 15:47:31 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterTest TestBaseRapor.tearDownTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@442f92e6]
+2022-07-01 15:47:32 INFO  Utils:112 - [TestNG] Time taken by org.testng.internal.ExitCodeListener@42cc183e: 0 ms
+2022-07-01 15:48:41 INFO  Utils:112 - [TestRunner] Running the tests in 'negatifSmokeTest' with parallel mode:none
+2022-07-01 15:48:41 INFO  Utils:112 - [RunInfo] Adding method selector: org.testng.internal.XmlMethodSelector@1f3f4916 priority: 10
+2022-07-01 15:48:41 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_001test]
+2022-07-01 15:48:42 INFO  WebDriverManager:1197 - Using chromedriver 103.0.5060.53 (resolved driver for Chrome 103)
+2022-07-01 15:48:42 INFO  WebDriverManager:1252 - Exporting webdriver.chrome.driver as C:\Users\ms\.cache\selenium\chromedriver\win32\103.0.5060.53\chromedriver.exe
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 2 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [TestClass] Creating TestClass for [ClassImpl class=tests.MuhammedSezgin.US_002test]
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 1 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 10 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 12 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+2022-07-01 15:48:45 INFO  Utils:112 - [TestNG] Running:
+  C:\Users\ms\Documents\GitHub\com.TradylinnProject\src\negatifSmokeTest.xml
+
+2022-07-01 15:48:45 INFO  Utils:112 - [SuiteRunner] Created 1 TestRunners
+2022-07-01 15:48:45 INFO  Utils:112 - [TestRunner] Running test negatifSmokeTest on 2  classes,  included groups:[negatifSmokeTest] excluded groups:[]
+2022-07-01 15:48:45 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_001test
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_001test.emptyEmail()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_001test.validEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_001test.registertrdControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_001test.strongPassControl1()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_001test.becomeVendor()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_001test.strongPassControl2()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_001test.verifyMail()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_001test.strongPassControl3()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_001test.strongPassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_001test.PassControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_001test.uniqueEmailControl()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:45 INFO  TestClass:112 - ======
+2022-07-01 15:48:45 INFO  TestClass:112 - ===== Test class
+tests.MuhammedSezgin.US_002test
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_002test.vendorLogin()[pri:0, instance:tests.MuhammedSezgin.US_002test@58e85c6f]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_002test.linkControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@58e85c6f]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_002test.purchase()[pri:0, instance:tests.MuhammedSezgin.US_002test@58e85c6f]
+2022-07-01 15:48:45 INFO  TestClass:112 -     @Test US_002test.dashboardControl()[pri:0, instance:tests.MuhammedSezgin.US_002test@58e85c6f]
+2022-07-01 15:48:45 INFO  TestClass:112 -   @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_002test@58e85c6f]
+2022-07-01 15:48:45 INFO  TestClass:112 - ======
+2022-07-01 15:48:45 INFO  Utils:112 - [Invoker 303563356] Invoking @BeforeTest TestBaseRapor.setUpTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:48:46 INFO  Utils:112 - [Utils] DynamicGraphHelper.createDynamicGraph() took 4 ms.
+2022-07-01 15:48:46 INFO  Utils:112 - [Invoker 303563356] Invoking tests.MuhammedSezgin.US_001test.validEmailControl
+2022-07-01 15:49:07 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterMethod TestBaseRapor.tearDownMethod(org.testng.ITestResult)[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:49:08 WARN  WebSocketHandler:142 - onError
+java.net.SocketException: Connection reset
+	at java.base/sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:394)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:426)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:258)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:722)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:658)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:584)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:496)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:995)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-07-01 15:49:08 INFO  Utils:112 - [Invoker 303563356] Invoking @AfterTest TestBaseRapor.tearDownTest()[pri:0, instance:tests.MuhammedSezgin.US_001test@67110f71]
+2022-07-01 15:49:09 INFO  Utils:112 - [TestNG] Time taken by org.testng.internal.ExitCodeListener@2e86807a: 1 ms

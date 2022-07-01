@@ -26,7 +26,7 @@ public abstract class TestBaseRapor {
         // İstediğiniz bilgileri buraya ekeyebiliyorsunuz.
         extentReports.setSystemInfo("Environment","Test");
         extentReports.setSystemInfo("Browser", ConfigReader.getProperty("browser")); // chrome, firefox
-        extentReports.setSystemInfo("Automation Engineer", "TEAM27");
+        extentReports.setSystemInfo("Automation Engineer", "TEAM34");
         extentHtmlReporter.config().setDocumentTitle("Rapor");
         extentHtmlReporter.config().setReportName("TestNG Reports");
     }
@@ -35,7 +35,8 @@ public abstract class TestBaseRapor {
     public void tearDownMethod(ITestResult result) throws IOException {
         if (result.getStatus() == ITestResult.SUCCESS) {
             String screenshotLocatio = ReusableMethods.getScreenshot(result.getName());
-        extentTest.addScreenCaptureFromPath(screenshotLocatio);}
+        extentTest.addScreenCaptureFromPath(screenshotLocatio);
+        }
 
         if (result.getStatus() == ITestResult.FAILURE) { // eğer testin sonucu başarısızsa
             String screenshotLocation = ReusableMethods.getScreenshot(result.getName());
@@ -45,7 +46,7 @@ public abstract class TestBaseRapor {
         } else if (result.getStatus() == ITestResult.SKIP) { // eğer test çalıştırılmadan geçilmezse
             extentTest.skip("Test Case is skipped: " + result.getName()); // Ignore olanlar
         }
-        //Driver.closeDriver();
+        Driver.closeDriver();
     }
     // Raporlandırmayı sonlandırmak icin
     @AfterTest(alwaysRun = true)

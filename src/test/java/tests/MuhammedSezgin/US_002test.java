@@ -21,12 +21,14 @@ public class US_002test extends TestBaseRapor {
        // sf.assertTrue( trd.bannerText.isDisplayed());
         //sf.assertAll();
 
+
     }
 
     @Test (groups = "end2end")
     public void purchase() {
         ReusableMethods.purchaseMethod();
         bekle(10);
+
 
     }
     @Test
