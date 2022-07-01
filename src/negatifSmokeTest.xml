@@ -1,15 +1,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="smoke test" verbose="3" >
-    <test name="smoketests1">
+<suite name="negatifSmokeTest" verbose="3" >
+    <test name="negatifSmokeTest">
         <groups>
             <run>
-                <include name="smoketests"/>
+                <include name="negatifSmokeTest"/>
             </run>
         </groups>
         <packages>
             <package name="tests.MuhammedSezgin"/>
-            <!--<package name="tests.SeckinKaraca"/> -->
         </packages>
     </test>
 </suite>

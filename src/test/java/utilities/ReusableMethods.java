@@ -36,15 +36,19 @@ public class ReusableMethods extends TestBaseRapor{
         extentTest.info("Arama TextBox`ina Urun Ismi Gonderildi.");
         hover(Driver.getDriver().findElement(By.xpath("//*[@class='product-archive']//figure")));
         Driver.getDriver().findElement(By.xpath("(//*[@class='product-action-vertical']//a)[1]")).click();
+        extentTest.info("Sepete Ekle Butonuna Clicklendi.");
         Driver.getDriver().findElement(By.xpath("//*[@class='cart-toggle']")).click();
+        extentTest.info("Sepet Butonuna Clicklendi.");
         bekle(10);
         Driver.getDriver().findElement(By.xpath("//*[@class='button checkout wc-forward']")).click();
+        extentTest.info("Odeme Yap Butonu Cliklendi.");
         scroolDowntoPixel(700);
         bekle(15);
         Driver.getDriver().findElement(By.xpath("//*[@id='wcfmmp_user_location']")).sendKeys("Istanbul");
+        extentTest.info("Adres Bilgileri Girildi.");
         bekle(15);
         Driver.getDriver().findElement(By.xpath("//button[@id='place_order']")).click();
-
+        extentTest.info("Place Order Butonuna Cliklendi.");
     }
 
     public static void scroolDowntoPixel(int pixel) {
@@ -123,18 +127,27 @@ public class ReusableMethods extends TestBaseRapor{
     }
 
     public static void tradylinnStoreManager() {
+        extentTest=extentReports.createTest("Vendor Olarak Store Manager Giris Testi.","Kullanici Vendor Olarak Store Manager `a Giris Yapabilmeli.");
         Driver.getDriver().get(ConfigReader.getProperty("tradyUrl"));
+        extentTest.info("Url`ye Gidildi.");
         bekle(5);
         Driver.getDriver().findElement(By.xpath("//span[contains(text(),'Giriş Yap')]")).click();
+        extentTest.info("Girisyap Butonuna Click Yapildi.");
         bekle(15);
         Driver.getDriver().findElement(By.xpath("(//*[@type='text'])[1]")).sendKeys(ConfigReader.getProperty("tradEmail"));
+        extentTest.info("Gecerli E-mail Bilgileri Girildi.");
         Driver.getDriver().findElement(By.xpath("(//*[@name='password'])[1]")).sendKeys(ConfigReader.getProperty("tradPass"));
+        extentTest.info("Gecerli Password Girildi.");
         Driver.getDriver().findElement(By.xpath("(//input[@type='checkbox'])[1]")).click();
+        extentTest.info("Beni Hatirla Checkbox`ina Tiklandi.");
         Driver.getDriver().findElement(By.xpath("(//*[@type='submit'])[1]")).click();
+        extentTest.pass("Submit Butonuna Click Yapildi.");
         bekle(15);
         Driver.getDriver().findElement(By.xpath("//*[@id='menu-item-1074']")).click();
+        extentTest.pass("Hesabim Butonuna Click Yapildi.");
         bekle(5);
         Driver.getDriver().findElement(By.xpath("(//*[@class='woocommerce-MyAccount-navigation col-md-3 mb-8']//li)[2]")).click();
+        extentTest.pass("Store Manager Butonuna Click Yapildi.");
 
     }
 
@@ -177,7 +190,7 @@ public class ReusableMethods extends TestBaseRapor{
         // TakesScreenshot is an interface of selenium that takes the screenshot
         File source = element.getScreenshotAs(OutputType.FILE);
         // full path to the screenshot location
-        String wElementSS = System.getProperty("user.dir") + "/target/WElementScreenshots/" + name + date + ".jpeg";
+        String wElementSS = System.getProperty("user.dir") + "/target/WElementScreenshots/" + name + date + ".png";
         File finalDestination = new File(wElementSS);
         // save the screenshot to the path given
         FileUtils.copyFile(source, finalDestination);

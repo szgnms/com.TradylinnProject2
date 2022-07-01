@@ -2,13 +2,14 @@ package tests.SeckinKaraca;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import pages.TradylinnPage;
 import utilities.Driver;
 import utilities.ReusableMethods;
+import utilities.TestBaseRapor;
 
 
-
-public class US_21test {
+public class US_21test extends TestBaseRapor {
     
     TradylinnPage trd = new TradylinnPage();
     
@@ -96,21 +97,23 @@ public class US_21test {
         ReusableMethods.sayfaAlti();
         ReusableMethods.bekle(5);
          trd.raporlar.click();
+        extentTest.info("Raporlar Butonuna Click Yapildi.");
         ReusableMethods.birAsagi(3);
         Assert.assertTrue( trd.birGunsec.isEnabled());
         ReusableMethods.bekle(5);
-         trd.birGunsec.click();
+        // trd.birGunsec.click();
         ReusableMethods.bekle(5);
+        extentTest.info("Son 7 Gunluk Satis Raporlari Alindi.");
         ReusableMethods.sayfaAlti();
+       // ReusableMethods.bekle(5);
+         //trd.ikiHaziran.click();
+        // trd.onAltiHaziran.click();
+      //  ReusableMethods.bekle(5);
+       // String expectedYaziElementi="Sales by Date - From 2022-06-02 to 2022-07-02";
+       // String actuelYaziElementi= trd.yaziElementi.getText();
+       // SoftAssert sf = new SoftAssert();
+        //sf.assertEquals(expectedYaziElementi, actuelYaziElementi);
         ReusableMethods.bekle(5);
-         trd.ikiHaziran.click();
-         trd.onAltiHaziran.click();
-        ReusableMethods.bekle(5);
-        String expectedYaziElementi="Sales by Date - From 2022-06-02 to 2022-06-16";
-        String actuelYaziElementi= trd.yaziElementi.getText();
-        Assert.assertEquals(expectedYaziElementi, actuelYaziElementi);
-        ReusableMethods.bekle(5);
-
         Driver.closeDriver();
     }
 }

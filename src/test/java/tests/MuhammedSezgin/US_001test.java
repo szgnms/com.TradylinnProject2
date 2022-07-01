@@ -53,14 +53,19 @@ public class US_001test extends TestBaseRapor {
         sf.assertAll();
     }
 
-    @Test
+    @Test(groups = "negatifSmokeTest")
     public void validEmailControl() {
         becomeVendor();
          trd.emailBlock.sendKeys("adasdasdasda");
+        extentTest.info("Yanlis E-mail Gonderildi.");
          trd.passwordBlock.sendKeys(ConfigReader.getProperty("tradPass"));
+        extentTest.info("Gecerli Password Gonderildi.");
          trd.confPasswordBlock.sendKeys(ConfigReader.getProperty("tradPass"));
+        extentTest.info("Gecerli Confirm Password Gonderildi.");
          trd.registerButton.click();
+        extentTest.info("Register Butonu Clik Yapildi.");
         sf.assertTrue( trd.registerEmailErrorYanlisMail.isDisplayed());
+        extentTest.info(" Yanlis Email Texti goruldu.");
         sf.assertAll();
     }
 

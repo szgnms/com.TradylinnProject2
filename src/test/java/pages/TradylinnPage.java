@@ -765,9 +765,9 @@ public class  TradylinnPage{
     public WebElement sonYediGun;
     @FindBy(xpath = "//*[@id=\"poststuff\"]/div/div[1]/ul/li[5]/form/div/input[1]")
     public WebElement birGunsec;
-    @FindBy(xpath = "/html/body/div[8]/div[2]/table[1]/tbody/tr[1]/td[5]/div")
+    @FindBy(xpath = "//*[@class='day toMonth valid real-today']")
     public WebElement ikiHaziran;
-    @FindBy(xpath = "/html/body/div[8]/div[2]/table[1]/tbody/tr[3]/td[5]/div")
+    @FindBy(xpath = "(//*[@class='day toMonth valid'])[25]")
     public WebElement onAltiHaziran;
     @FindBy(xpath = "//*[@id=\"wcfm_report_details\"]/div[1]/span[2]")
     public WebElement yaziElementi;

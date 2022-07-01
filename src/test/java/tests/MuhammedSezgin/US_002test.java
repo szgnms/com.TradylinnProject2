@@ -18,14 +18,16 @@ public class US_002test extends TestBaseRapor {
     @Test (groups = "smoketests")
     public void vendorLogin()  {
         ReusableMethods.tradylinnGiris();
-        sf.assertTrue( trd.bannerText.isDisplayed());
-        sf.assertAll();
+       // sf.assertTrue( trd.bannerText.isDisplayed());
+        //sf.assertAll();
+        Driver.getDriver();
     }
 
     @Test (groups = "end2end")
     public void purchase() {
         ReusableMethods.purchaseMethod();
         bekle(10);
+
     }
     @Test
     public void linkControl() {
